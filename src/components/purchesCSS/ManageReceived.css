@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --gray-white: #F0F1F2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --lt-black: #212523;
+    --lt-black-op: #21252350;
+    --m-green: #157343;
+    --m-light: #37A000;
+    --orange: #FD7E14;
+    --green: #008000;
+    --lt-green: #e9f6ec;
+    --red: #FF0000;
+    --lt-red: #fbeaec;
+    /* === FONTS SIZE FOR HEADING === */
+    --primary-head: 22px;
+    --secondary-head: 1.125rem;
+    --secondary: 1rem;
+    --primary-para: 0.825rem;
+}
+/* === PARENT SECTION === */
+.manage-received-sh-parent-section{
+    width: 100%;
+    padding: 30px 20px 100px 30px;
+}
+/* === CHILD SECTION === */
+.manage-received-sh-child-section{
+    width: 100%;
+}
+/* === TOP MENU ITEMS === */
+.manage-received-sh-top-menu-items{
+    border-radius: 5px;
+    background-color: var(--white);
+    padding: 10px 0px 10px 10px!important;
+}
+.manage-received-sh-top-menu-items ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: -25px;
+}
+.manage-received-sh-top-menu-items li{
+    height: 50px;
+}
+.manage-received-sh-top-menu-items a{
+    height: 100%;
+    padding: 0px 20px;
+    color: var(--black);
+    font-size: var(--secondary);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+.manage-received-sh-menu-items a:hover{
+    color: var(--orange);
+}
+/* === ACTIVE MENU === */
+.manage-received-sh-active-item a{
+    background-color: var(--m-green);
+    color: var(--white);
+    border-radius: 5px;
+}
+/* === REQUISIION LIST SECTION === */
+/* === DRAFT SALE SECITON === */
+.manage-received-sh-draft-sale-section{
+    width: 100%;
+    margin-top: 20px;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+/* === DRAFT SALE TOP ITEMV === */
+.manage-received-sh-draft-sale-top-item{
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.manage-received-sh-draft-sale-top-item p{
+    font-size: var(--secondary);
+}
+/* === SHOW AND SEARCH CONTAINER === */
+.manage-received-sh-show-and-search-container{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.manage-received-sh-show-container{
+    gap: 5px;
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+}
+.manage-received-sh-show-container select{
+    padding: 5px 2px;
+}
+.manage-received-sh-show-container select:focus{
+    outline: none;
+}
+/* === SEARCH === */
+.manage-received-sh-search-container{
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+.manage-received-sh-search-container input{
+    width: 400px;
+    padding: 5px 10px;
+    border: 1px solid var(--lt-black-op);
+}
+.manage-received-sh-search-container input:focus{
+    outline: none;
+}
+/* === MANAGE SALE DETAILS SECTION === */
+.manage-received-manage-sale-details-section{
+    width: 100%;
+    padding: 0px 20px;
+}
+/* === TABLE === */
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 10px;
+    border: 1px solid var(--lt-black-op);
+}
+table th{
+    font-size: var(--secondary);
+    font-weight: 500;
+}
+/* === SLIDE PAGES === */
+.manage-received-sh-slider-pages {
+    padding: 0px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.manage-received-sh-slide-right-item {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.manage-received-sh-slide-right-item a {
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: var(--black);
+    background-color: var(--lt-black-op);
+}
+
+.manage-received-sh-slide-right-item p {
+    padding: 6px 15px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--m-green);
+}
+/* === DRAFT SALE TOP ITEMV === */
+.manage-received-sh-requisition-top-item{
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray-black);
+}
+.manage-received-sh-requisition-top-item p{
+    font-size: var(--secondary);
+}
+/* === DRAFT SALE TOP RIGHT ITMES === */
+.manage-received-sh-draft-sale-top-right-items{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+/* === FILTR === */
+.manage-received-sh-filter{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--m-green);
+}
+.manage-received-sh-filter a{
+    color: white;
+    font-size: var(--primary-para);
+}
+
+/* === FILTER DROPDOWN SECTION === */
+.manage-received-sh-filter-drop-down-section{
+    gap: 20px;
+    padding: 25px 20px 15px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--gray-black);
+}
+/* === SH DRAFT CONTAINER === */
+.manage-received-sh-draft-container{
+    line-height: 2em;
+}
+.manage-received-sh-draft-container input{
+    padding: 8px 8px 5px 10px;
+    border: 1px solid var(--gray-black);
+    text-align: left;
+}
+.manage-received-sh-draft-container input:focus{
+    outline: none;
+}
+/* === FILTER SEARCH === */
+.manage-received-sh-filter-search-box{
+    background-color: var(--m-green);
+    padding: 4px 10px;
+    color: var(--white);
+    gap: 5px;
+    border-radius: 5px;
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+}
+/* === FILTER RESET === */
+.manage-received-sh-filter-reset-box{
+    background-color: var(--red);
+    padding: 4px 10px;
+    color: var(--white);
+    gap: 5px;
+    border-radius: 5px;
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+}
+.manage-received-sh-line{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+/* === SHOW AND SEARCH CONTAINER === */
+.manage-received-sh-show-and-search-container{
+    padding: 20px 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.manage-received-sh-show-container{
+    gap: 5px;
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+}
+.manage-received-sh-show-container select{
+    padding: 5px 8px 3px;
+}
+.manage-received-sh-show-container select:focus{
+    outline: none;
+}
+/* === SEARCH === */
+.manage-received-sh-search-container{
+    gap: 7.5px;
+    display: flex;
+    align-items: center;
+}
+.manage-received-sh-search-container input{
+    width: 250px;
+    padding: 5px 10px;
+    border-radius: 0px;
+    border: 1px solid var(--lt-black-op);
+}
+.manage-received-sh-search-container input:focus{
+    outline: none;
+}

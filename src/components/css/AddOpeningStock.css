@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --gray-white: #F0F1F2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --light-black: #212523;
+    --light-black-op: #21252350;
+    --main-green: #157343;
+    --main-light: #37A000;
+    --orange: #FD7E14;
+    --green: #008000;
+    --light-green: #e9f6ec;
+    --red: #FF0000;
+    --light-red: #fbeaec;
+    /* === FONTS SIZE FOR HEADING === */
+    --primary-head: 22px;
+    --secondary-head: 1.125rem;
+    --secondary: 1rem;
+    --primary-para: 0.825rem;
+}
+
+/* === PARENT SECTION === */
+.sh-adostock-parent-section {
+    width: 100%;
+    padding: 20px;
+}
+
+/* === CHILD SECTION === */
+.sh-adostock-child-section {
+    width: 100%;
+}
+
+/* === TOP MENU ITEMS === */
+.sh-adostock-top-menu-items {
+    border-radius: 5px;
+    background-color: var(--white);
+    padding: 10px 0px 10px 10px;
+}
+
+.sh-adostock-top-menu-items ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.sh-adostock-top-menu-items li {
+    height: 50px;
+}
+
+.sh-adostock-top-menu-items a {
+    height: 100%;
+    padding: 0px 20px;
+    color: var(--black);
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+}
+
+.sh-adostock-menu-items a:hover {
+    color: var(--orange)!important;
+}
+
+/* === ACTIVE MENU === */
+.sh-adostock-active-item a {
+    background-color: var(--main-green);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+/* === REQUISIION LIST SECTION === */
+.sh-adostock-requisition-top-item{
+    padding: 20px;
+}
+
+/* === DRAFT SALE SECITON === */
+.sh-adostock-draft-sale-section {
+    width: 100%;
+    background-color: var(--white);
+    box-sh-adostockadow: 3px 3px 5px rgb(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+/* === OUTLET CONTAINER === */
+.sh-adostock-outlet-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    font-size: var(--secondary);
+}
+
+.sh-adostock-outlet-container input {
+    width: 500px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: var(--primary-para);
+    border: 1px solid var(--light-black-op);
+}
+
+.sh-adostock-outlet-container input:focus {
+    outline: none;
+}
+
+/* === EVERTHING SEARCH BOX === */
+.sh-adostock-everything-search-container {
+    padding: 20px;
+}
+
+.sh-adostock-everything-search-container input {
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: var(--primary-para);
+    border: 1px solid var(--light-black-op);
+    width: 100%;
+}
+/* === PRODUCT ALL DETAILS === */
+.sh-adostock-produt-all-details-container{
+    padding: 1px 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 0px 30px;
+}
+
+th,
+td {
+    border: 1px solid var(--light-black-op);
+    padding: 10px 5px;
+}
+
+table th {
+    font-size: var(--secondary);
+    font-weight: 500;
+}
+table td{
+    text-align: center;
+    align-items: center;
+}
+.sh-adostock-product-search-box{
+    display: flex;  
+}
+.sh-adostock-product-search-box input {
+    width: 790px;
+    padding: 8px 5px;
+    border: 1px solid var(--light-black);
+    font-size: var(--primary-para);
+}
+
+.sh-adostock-product-search-box input:focus {
+    outline: none;
+}
+
+.sh-adostock-avqty-box input{
+    width: 100px;
+    padding: 5px 5px;
+    border: none;
+    background-color: var(--light-black-op);
+    font-size: var(--primary-para);
+}
+.sh-adostock-avqty-box input:focus{
+    outline: none;
+}   
+.sh-adostock-barcoee-box input{
+    width: 100px;
+    padding: 5px 5px;
+    border: none;
+    border: 1px solid var(--light-black-op);
+    font-size: var(--primary-para);
+}
+.sh-adostock-barcoee-box input:focus{
+    outline: none;
+}   
+.sh-adostock-qty-number-input input{
+    width: 90px;
+    padding: 5px 5px;
+    border: 1px solid var(--light-black);
+    font-size: var(--primary-para);
+}
+.sh-adostock-qty-number-input input:focus{
+    outline: none;
+}
+.sh-adostock-rate-input-container input{
+    width: 100px;
+    padding: 5px 5px;
+    border: 1px solid var(--light-black);
+    font-size: var(--primary-para);
+}
+.sh-adostock-rate-input-container input:focus{
+    outline: none;
+}
+.sh-adostock-total-contaier input{
+    width: 100px;
+    padding: 5px 5px;
+    background-color: var(--light-black-op);
+    border: 1px solid var(--light-black);
+    font-size: var(--primary-para);
+}
+.sh-adostock-total-contaier input:focus{
+    outline:none
+}
+/* === DELETE ICON === */
+.sh-adostock-delet-icon i{
+    padding: 5px 5px;
+    color: var(--red);
+    font-size: var(--primary-head);
+    border: 1px solid var(--red);
+    background-color: var(--light-red);
+}
+.sh-adostock-delet-icon i:hover{
+    padding: 5px 5px;
+    color: var(--white);
+    font-size: var(--primary-head);
+    border: 1px solid var(--red);
+    background-color: var(--red);
+}
+.sh-adostock-plus-icon-two a i{
+    padding: 5px 5px;
+    color: var(--main-green);
+    font-size: var(--primary-head);
+    background-color: var(--light-green);
+    border: 1px solid var(--main-green);
+}
+.sh-adostock-plus-icon-two a i:hover{
+    padding: 5px 5px;
+    color: var(--white);
+    font-size: var(--primary-head);
+    background-color: var(--main-green);
+    border: 1px solid var(--main-green);
+}
+tbody tr th p{
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+/* === BOTTOM ITEMS === */
+.sh-adostock-bottom-items{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    line-height: 2em;
+    font-size: var(--secondary);
+    align-items: center;
+    justify-content: flex-end;
+}
+.sh-adostock-submit-button a{
+    background-color: var(--main-green);
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+.sh-adostock-submit-button{
+    display: flex;
+    justify-content: flex-end; 
+    padding: 20px;
+}
+.sh-adostock-total-text-end{
+    text-align: right;
+}

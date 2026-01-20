@@ -1,0 +1,420 @@
+/* -- font link -- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* -- root css -- */
+
+:root {
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --gray-white: #F0F1F2; /* For body*/
+    --green: #008000;
+    --lt-black-op: #21252350;
+    --lt-black: #212523;
+    --lt-gray: #EFEFEF;
+    --lt-green: #e9f6ec;
+    --orange: #FD7E14;
+    --lt-red: #fbeaec;
+    --m-green: #157343;
+    --m-lt: #37A000;
+    --red: #FF0000;
+    --white: #FFFFFF;
+}
+
+/* -- universal style -- */
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* -- web app cursor element selection style -- */
+
+::selection {
+    background-color: var(--m-lt);
+    color: var(--white);
+}
+
+/* -- setting container style -- */
+
+.cba-sps-container {
+    padding: 20px 20px 20px 30px;
+}
+
+/* -- settings top menu bar style -- */
+
+/* -- menu block style -- */
+
+.cba-sps-top-menubar > ul {
+    align-items: flex-start;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 10px 0px 7.5px 0px;
+}
+
+/* -- main menu and their icon style -- */
+
+.cba-sps-top-menubar > ul > li {
+    align-items: center;
+    border-bottom: 2px solid var(--white);
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    gap: 5px;
+}
+
+/* -- active main menu style -- */
+
+.cba-sps-top-menubar > ul > li.cba-sps-one {
+    color: var(--m-lt);
+}
+
+/* -- main menu icon style -- */
+
+.cba-sps-top-menubar > ul > li > .cba-top-menu-arrow {
+    color: var(--lt-black);
+    font-size: 1.5rem;
+}
+
+/* -- main menu hover style -- */
+
+.cba-sps-top-menubar > ul > li:hover {
+    border-bottom: 2px solid var(--m-lt);
+}
+
+/* -- menu three style -- */
+
+.cba-sps-top-menubar > ul > li > a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+/* -- settings top menu bar dropdown style -- */
+
+.cba-sps-top-menubar > ul > li > ul {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 7.5px;
+    list-style-type: none;
+    padding: 2.5px 12.5px;
+}
+
+.cba-sps-top-menubar > ul > li > ul {
+    display: none;
+}
+
+/* -- main manus dropdown style -- */
+
+.cba-sps-top-menubar > ul > .cba-sps-one:hover > .cba-sps-one-dd {
+    display: block;
+}
+
+.cba-sps-top-menubar > ul > .cba-sps-two:hover > .cba-sps-two-dd {
+    display: block;
+}
+
+/* -- dropdown menus text style -- */
+
+.cba-sps-top-menubar > ul > li > ul > li {
+    padding-bottom: 2.5px;
+}
+
+.cba-sps-top-menubar > ul > li > ul > li > a {
+    color: var(--black);
+    font-size: 0.875rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* -- dropdown active menu style -- */
+
+.cba-sps-top-menubar > ul > li > ul > li > a.cba-sps-one-dd-active {
+    color: var(--m-lt);
+}
+
+/* -- dropdown menus hover style -- */
+
+.cba-sps-top-menubar > ul > li > ul > li > a:hover {
+    text-decoration: underline 1.5px var(--m-lt);
+}
+
+/* -- dropdown menu position style -- */
+
+.cba-sps-top-menubar > ul > .cba-sps-one {
+    position: relative;
+}
+
+.cba-sps-top-menubar > ul > li > .cba-sps-one-dd {
+    position: absolute;
+    top: 27.5px;
+    left: 0px;
+    z-index: 1;
+}
+
+.cba-sps-top-menubar > ul > .cba-sps-two {
+    position: relative;
+}
+
+.cba-sps-top-menubar > ul > li > .cba-sps-two-dd {
+    position: absolute;
+    top: 27.5px;
+    left: 0px;
+    width: 177px;
+    z-index: 1;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* details container style */
+
+.cba-sps-details-container {
+    display: flex;
+    gap: 25px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* left inner container */
+
+.cba-sps-left-inner-con {
+    width: 60%;
+    background-color: var(--white);
+    padding: 20px 20px;
+}
+
+.cba-sps-lic-heading-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cba-sps-lic-heading-part > h1 {
+    font-size: 1.25rem;
+    color: var(--lt-black);
+    margin-bottom: 0;
+}
+
+.cba-sps-lic-heading-part > button {
+    background-color: var(--m-green);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+    padding: 5px 15px 3px;
+    border-radius: 2.5px;
+    display: flex;
+    align-items: center;
+    gap: 2.5px;
+    /* add icon style */
+    .cba-sps-lic-plus-icon {
+        font-size: 0.95rem;
+    }
+}
+
+/* table style */
+.cba-sps-lic-table-container > table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--gray-black);
+    background-color: var(--white);
+}
+
+/* thead */
+
+.cba-sps-lic-table-container > table > thead > tr > th {
+    background-color: var(--gray-white);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: default;
+}
+
+/* tbody */
+.cba-sps-lic-table-container > table > tbody > tr > td {
+    /* background-color: var(--white); */
+    font-size: 0.875rem;
+    font-weight: 450;
+    padding: 7.5px 12.5px;
+    border: 1px solid var(--gray-black);
+}
+
+.cba-sps-lic-table-container > table > tbody > tr:nth-child(even){
+    background-color: var(--lt-gray)!important;
+}
+
+.cba-sps-lic-table-container > table > tbody > tr:hover {
+    background-color: var(--lt-gray)!important;
+}
+
+/* status style */
+
+/* active */
+.cba-sps-lic-table-container > table > tbody > tr > td > span.cba-sps-lic-pms-active {
+    color: var(--green);
+    background-color: var(--lt-green);
+    font-size: 0.7rem;
+    font-weight: 400;
+    padding: 1.25px 7.5px 1.5px;
+    border-radius: 15px;
+}
+
+/* inactive */
+.cba-sps-lic-table-container > table > tbody > tr > td > span.cba-sps-lic-pms-inactive {
+    color: var(--red);
+    background-color: var(--lt-red);
+    font-size: 0.7rem;
+    font-weight: 400;
+    padding: 1.25px 7.5px 1.5px;
+    border-radius: 15px;
+}
+
+.cba-sps-lic-table-container > table > tbody > tr > td > div {
+    display: flex;
+    gap: 7.5px;
+    align-items: center;
+}
+
+/* edit icon style */
+.cba-sps-lic-table-container > table > tbody > tr > td > div > i.cba-sps-lic-edit-icon {
+    color: var(--green);
+    background-color: var(--lt-green);
+    padding: 8px 7px 5.5px;
+    border: 1px solid var(--green);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/* delete icon style */
+.cba-sps-lic-table-container > table > tbody > tr > td > div > i.cba-sps-lic-delete-icon {
+    color: var(--red);
+    background-color: var(--lt-red);
+    padding: 8px 7px 5.5px;
+    border: 1px solid var(--red);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/* right inner container */
+
+.cba-sps-right-inner-con {
+    width: 40%;
+    background-color: var(--white);
+    padding: 20px 20px;
+}
+
+.cba-sps-risc-heading-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18.5px;
+}
+
+.cba-sps-risc-heading-part > h1 {
+    font-size: 1.25rem;
+    color: var(--lt-black);
+    margin-bottom: 0;
+}
+
+.cba-sps-risc-heading-part > button {
+    background-color: var(--m-green);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-family: "Poppins", serif!important;
+    padding: 7px 15px 8px;
+    border-radius: 2.5px;
+    display: flex!important;
+    align-items: center!important;
+    gap: 2.5px!important;
+    .cba-sps-risc-plus-icon {
+        font-size: 0.95rem;
+    }
+}
+
+/* table style */
+
+.cba-sps-risc-table-container > table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--gray-black);
+    background-color: var(--white);
+}
+
+/* thead */
+
+.cba-sps-risc-table-container > table > thead > tr > th {
+    background-color: var(--gray-white);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: default;
+}
+
+/* tbody */
+.cba-sps-risc-table-container > table > tbody > tr > td {
+    /* background-color: var(--white); */
+    font-size: 0.875rem;
+    font-weight: 450;
+    padding: 7.5px 12.5px;
+    border: 1px solid var(--gray-black);
+}
+
+.cba-sps-risc-table-container > table > tbody > tr:nth-child(even){
+    background-color: var(--lt-gray)!important;
+}
+
+.cba-sps-risc-table-container > table > tbody > tr:hover {
+    background-color: var(--lt-gray)!important;
+}
+
+/* status style */
+
+/* active */
+.cba-sps-risc-table-container > table > tbody > tr > td > span.cba-sps-risc-pts-active {
+    color: var(--green);
+    background-color: var(--lt-green);
+    font-size: 0.7rem;
+    font-weight: 400;
+    padding: 1.25px 7.5px 1.5px;
+    border-radius: 15px;
+}
+
+/* inactive */
+.cba-sps-risc-table-container > table > tbody > tr > td > span.cba-sps-risc-pts-inactive {
+    color: var(--red);
+    background-color: var(--lt-red);
+    font-size: 0.7rem;
+    font-weight: 400;
+    padding: 1.25px 7.5px 1.5px;
+    border-radius: 15px;
+}
+
+.cba-sps-risc-table-container > table > tbody > tr > td > div {
+    display: flex;
+    gap: 7.5px;
+    align-items: center;
+}
+
+/* edit icon style */
+.cba-sps-risc-table-container > table > tbody > tr > td > div > i.cba-sps-risc-edit-icon {
+    color: var(--green);
+    background-color: var(--lt-green);
+    padding: 8px 7px 5.5px;
+    border: 1px solid var(--green);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/* delete icon style */
+.cba-sps-risc-table-container > table > tbody > tr > td > div > i.cba-sps-risc-delete-icon {
+    color: var(--red);
+    background-color: var(--lt-red);
+    padding: 8px 7px 5.5px;
+    border: 1px solid var(--red);
+    font-size: 1.1rem;
+    cursor: pointer;
+}

@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --gray-white: #F0F1F2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --lt-black: #212523;
+    --lt-black-op: #21252350;
+    --m-green: #157343;
+    --m-lt: #37A000;
+    --orange: #FD7E14;
+    --green: #008000;
+    --lt-green: #e9f6ec;
+    --red: #FF0000;
+    --lt-red: #fbeaec;
+    /* === FONTS SIZE FOR HEADING === */
+    --primary-head: 22px;
+    --secondary-head: 1.125rem;
+    --secondary: 1rem;
+    --primary-para: 0.825rem;
+}
+/* === PARENT SECTION === */
+.addrequisition-sh-parent-section{
+    width: 100%;
+    padding: 20px 20px 200px 30px;
+}
+/* === CHILD SECTION === */
+.addrequisition-sh-child-section{
+    width: 100%;
+}
+/* === TOP MENU ITEMS === */
+.addrequisition-sh-top-menu-items{
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--white);
+    padding: 10px 0px 10px 10px!important;
+    margin-top: 10px;
+    margin-bottom: 20px!important;
+}
+.addrequisition-sh-top-menu-items ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: -25px!important;
+}
+.addrequisition-sh-top-menu-items li{
+    height: 50px;
+}
+.addrequisition-sh-top-menu-items a{
+    height: 100%;
+    padding: 0px 20px;
+    color: var(--black);
+    font-size: var(--secondary);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+.addrequisition-sh-menu-items a:hover{
+    color: var(--orange);
+}
+/* === ACTIVE MENU === */
+.addrequisition-sh-active-item a{
+    background-color: var(--m-green);
+    color: var(--white);
+    border-radius: 5px;
+}
+/* === ADD REQUISITION CONTAINER === */
+.addrequisition-sh-add-requisition-container{
+    font-size: var(--secondary);
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 15px 0px 15px!important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray-black)!important;
+}
+.addrequisition-sh-requisition-list a{
+    font-size: var(--secondary);
+    color: var(--white);
+    background-color: var(--m-green);
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+/* === POSE SALE CUSTOMER DETAILS === */
+.addrequisition-sh-pose-sale-customer-section{
+    border-radius: 5px;
+    background-color: var(--white);
+    margin-top: 20px;
+    padding-top: 10px;
+}
+/* === CUSTOMER DETAILS === */
+.addrequisition-sh-pose-sale-customer-details-input {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.addrequisition-sh-customer-name {
+    font-size: 1rem;
+    line-height: 2em;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addrequisition-sh-customer-name-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.addrequisition-sh-customer-name-container > label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.addrequisition-sh-customer-name-container select {
+    width: 700px;
+    padding: 5px 2px;
+    font-size: var(--secondary);
+    color: var(--lt-black);
+    border: 1px solid var(--gray-black);
+    border-radius: 0px;
+    padding-inline-start: 10px;
+}
+
+@media (max-width: 1536px) {
+    .addrequisition-sh-customer-name-container > label {
+        white-space: nowrap;
+    }
+    .addrequisition-sh-customer-name-container select {
+        width: 400px;
+    }
+    .addrequisition-sh-address label {
+        white-space: nowrap;
+    }
+    .addrequisition-sh-address input {
+        width: 400px!important;
+    }
+}
+
+.addrequisition-sh-customer-name-container select:focus {
+    outline: none;
+}
+
+.sh-plus-input {
+    display: flex;
+}
+
+.addrequisition-sh-plus-icon p {
+    padding: 1.5px 10px;
+    background-color: var(--m-green);
+    color: var(--white);
+}
+
+.addrequisition-sh-address {
+    display: flex!important;
+    gap: 20px;
+    align-items: center;
+    flex-direction: row;
+}
+/* === ADDRESS === */
+.addrequisition-sh-address label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--black);
+    margin-top: -5px;
+}
+
+.addrequisition-sh-address input {
+    width: 700px;
+    padding: 5px 5px;
+    font-size: var(--secondary);
+    border: 1px solid var(--gray-black);
+    text-align: left;
+    border-radius: 0px;
+    padding-inline-start: 10px;
+}
+
+.addrequisition-sh-address input::placeholder {
+    color: var(--lt-black);
+}
+
+.addrequisition-sh-address input:focus {
+    outline: none;
+}
+.addrequisition-sh-pose-sale-customer-details-input > textarea {
+    height: 107px;
+    width: 650px;
+    border: 1px solid var(--gray-black);
+    padding: 5px 0px 0px 10px;
+}
+
+.addrequisition-sh-pose-sale-customer-details-input > textarea::placeholder {
+    font-size: 1rem;
+    color: var(--lt-black);
+}
+
+.addrequisition-sh-pose-sale-customer-details-input > textarea:focus{
+    outline: none;
+}
+
+/* === EVERY THING SEARCH BOX === */
+.addrequisition-everyThing-search-box {
+    padding: 0px 20px 0px;    
+}
+
+.addrequisition-everyThing-search-box input {
+    text-align: left;
+    border: 1px solid var(--gray-black);
+    width: 100%;
+    padding: 8px 10px;
+}
+
+.addrequisition-everyThing-search-box input:focus {
+    outline: none;
+}
+
+/* === PRODUCT ALL DETAILS === */
+.addrequisition-sh-produt-all-details-container{
+    padding: 0px 20px 0px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 0px 30px;
+}
+
+th,
+td {
+    border: 1px solid var(--gray-black);
+    padding: 10px 5px;
+}
+
+table th {
+    font-size: var(--secondary);
+    font-weight: 500;
+}
+table td{
+    text-align: center;
+}
+
+/* ------------------------------------------------------------- */
+
+
+
+/* ------------------------------------------------------------------ */
+.addrequisition-sh-product-search-box{
+    display: flex;  
+}
+.addrequisition-sh-product-search-box input {
+    width: 500px;
+    padding: 8px 5px;
+    border: 1px solid var(--gray-black);
+    font-size: var(--primary-para);
+    margin-top: 10px;
+}
+
+@media (max-width: 1536px) {
+    .addrequisition-sh-product-search-box input {
+        width: 350px;
+    }
+}
+
+.addrequisition-sh-product-search-box input:focus {
+    outline: none;
+}
+
+.addrequisition-sh-av-box input{
+    width: 50px;
+    padding: 5px 5px;
+    border: 1px solid black;
+    font-size: var(--primary-para);
+}
+.addrequisition-sh-av-box input:focus{
+    outline: none;
+}   
+.addrequisition-sh-qty-number-input input{
+    width: 70px;
+    padding: 5px 5px;
+    border: 1px solid var(--gray-black);
+    font-size: var(--primary-para);
+}
+.addrequisition-sh-qty-number-input input:focus{
+    outline: none;
+}
+.addrequisition-sh-rate-input-container input{
+    width: 60px;
+    padding: 5px 5px;
+    border: 1px solid var(--gray-black);
+    font-size: var(--primary-para);
+}
+.addrequisition-sh-rate-input-container input:focus{
+    outline: none;
+}
+.addrequisition-sh-discount-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addrequisition-sh-discount-left-container input{
+    width: 50px;
+    padding: 5px 5px;
+    border: 1px solid var(--gray-black);
+    font-size: var(--primary-para);
+}
+.addrequisition-sh-discount-left-container input:focus{
+    outline: none;
+}
+.addrequisition-sh-discount-right-container input{
+    width: 50px;
+    padding: 5px 5px;
+    border: 1px solid var(--gray-black);
+    background-color: var(--lt-black-op);
+    font-size: var(--primary-para);
+}
+.addrequisition-sh-discount-right-container input:focus{
+    outline: none;
+}
+.addrequisition-sh-vatbox-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addrequisition-sh-vat-left-container input{
+    width: 50px;
+    padding: 5px 5px;
+    border: 1px solid var(--gray-black);
+    font-size: var(--primary-para);
+}
+.addrequisition-sh-vat-left-container input:focus{
+    outline: none;
+}
+.addrequisition-sh-vat-right-container input{
+    width: 50px;
+    padding: 5px 5px;
+    background-color: var(--gray-black-op);
+    border: 1px solid var(--lt-black);
+    font-size: var(--primary-para);
+}
+.addrequisition-sh-vat-right-container input:focus{
+    outline: none;
+}
+.addrequisition-sh-total-contaier input{
+    width: 100px;
+    padding: 5px 5px;
+    background-color: var(--gray-black-op);
+    border: 1px solid var(--lt-black);
+    font-size: var(--primary-para);
+}
+.addrequisition-sh-total-contaier input:focus{
+    outline:none
+}
+/* === DELETE ICON === */
+.addrequisition-sh-delet-icon i{
+    padding: 5px 5px;
+    color: var(--red);
+    font-size: var(--primary-head);
+    border: 1px solid var(--red);
+    background-color: var(--lt-red);
+}
+.addrequisition-sh-delet-icon i:hover{
+    padding: 5px 5px;
+    color: var(--white);
+    font-size: var(--primary-head);
+    border: 1px solid var(--red);
+    background-color: var(--red);
+}
+.addrequisition-sh-plus-icon-two a i{
+    padding: 5px 5px;
+    color: var(--m-green);
+    font-size: var(--primary-head);
+    background-color: var(--lt-green);
+    border: 1px solid var(--m-green);
+}
+.addrequisition-sh-plus-icon-two a i:hover{
+    padding: 5px 5px;
+    color: var(--white);
+    font-size: var(--primary-head);
+    background-color: var(--m-green);
+    border: 1px solid var(--m-green);
+}
+tbody tr th p{
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+/* === BOTTOM ITEMS === */
+.addrequisition-sh-bottom-items{
+    display: flex;
+    gap: 30px;
+    padding: 0px 20px 0px;
+    line-height: 2em;
+    font-size: var(--secondary);
+    align-items: center;
+    justify-content: flex-end;
+}
+.addrequisition-sh-total-discount input{
+    padding: 5px 10px;
+    border: 1px solid var(--lt-black-op);
+}
+.addrequisition-sh-total-discount input:focus{
+    outline: none;
+}
+.addrequisition-sh-submit-button a{
+    background-color: var(--m-green);
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+.addrequisition-sh-submit-button{
+    display: flex;
+    justify-content: flex-end; 
+    padding: 20px;
+}

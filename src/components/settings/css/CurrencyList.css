@@ -1,0 +1,364 @@
+/* -- font link -- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* -- root css -- */
+
+:root {
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --gray-white: #F0F1F2; /* For body*/
+    --green: #008000;
+    --lp-green: #F8FAF8;
+    --lt-black-op: #21252350;
+    --lt-black: #212523;
+    --lt-gray: #EFEFEF;
+    --lt-green: #e9f6ec;
+    --orange: #FD7E14;
+    --lt-red: #fbeaec;
+    --m-green: #157343;
+    --m-lt: #37A000;
+    --red: #FF0000;
+    --white: #FFFFFF;
+}
+
+/* -- universal style -- */
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* -- web app cursor element selection style -- */
+
+::selection {
+    background-color: var(--m-lt);
+    color: var(--white);
+}
+
+/* -- setting container style -- */
+
+.cba-currency-list-container {
+    padding: 20px 20px 20px 30px;
+}
+
+/* -- cult top menu bar style -- */
+
+/* -- menu block style -- */
+
+.cba-cult-top-menubar > ul {
+    align-items: flex-start;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 10px 0px 7.5px 0px;
+}
+
+/* -- main menu and their icon style -- */
+
+.cba-cult-top-menubar > ul > li {
+    align-items: center;
+    border-bottom: 2px solid var(--white);
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    gap: 5px;
+}
+
+/* -- active main menu style -- */
+
+.cba-cult-top-menubar > ul > li.cba-culttm-one {
+    color: var(--m-lt);
+}
+
+/* -- main menu icon style -- */
+
+.cba-cult-top-menubar > ul > li > .cba-top-menu-arrow {
+    color: var(--lt-black);
+    font-size: 1.5rem;
+}
+
+/* -- main menu hover style -- */
+
+.cba-cult-top-menubar > ul > li:hover {
+    border-bottom: 2px solid var(--m-lt);
+}
+
+/* -- menu three style -- */
+
+.cba-cult-top-menubar > ul > li > a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+/* -- cult top menu bar dropdown style -- */
+
+.cba-cult-top-menubar > ul > li > ul {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 7.5px;
+    list-style-type: none;
+    padding: 2.5px 12.5px;
+}
+
+.cba-cult-top-menubar > ul > li > ul {
+    display: none;
+}
+
+/* -- main manus dropdown style -- */
+
+.cba-cult-top-menubar > ul > .cba-culttm-one:hover > .cba-culttm-one-dd {
+    display: block;
+}
+
+.cba-cult-top-menubar > ul > .cba-culttm-two:hover > .cba-culttm-two-dd {
+    display: block;
+}
+
+/* -- dropdown menus text style -- */
+
+.cba-cult-top-menubar > ul > li > ul > li {
+    padding-bottom: 2.5px;
+}
+
+.cba-cult-top-menubar > ul > li > ul > li > a {
+    color: var(--black);
+    font-size: 0.875rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* -- dropdown active menu style -- */
+
+.cba-cult-top-menubar > ul > li > ul > li > a.cba-culttm-one-dd-active {
+    color: var(--m-lt);
+}
+
+/* -- dropdown menus hover style -- */
+
+.cba-cult-top-menubar > ul > li > ul > li > a:hover {
+    text-decoration: underline 1.5px var(--m-lt);
+}
+
+/* -- dropdown menu position style -- */
+
+.cba-cult-top-menubar > ul > .cba-culttm-one {
+    position: relative;
+}
+
+.cba-cult-top-menubar > ul > li > .cba-culttm-one-dd {
+    position: absolute;
+    top: 27.5px;
+    left: 0px;
+    z-index: 1;
+}
+
+.cba-cult-top-menubar > ul > .cba-culttm-two {
+    position: relative;
+}
+
+.cba-cult-top-menubar > ul > li > .cba-culttm-two-dd {
+    position: absolute;
+    top: 27.5px;
+    left: 0px;
+    width: 177px;
+    z-index: 1;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* currency list container style */
+.cba-cult-inner-container {
+    background-color: var(--white);
+    padding: 20px 25px;
+}
+
+/* head part */
+.cba-cult-ic-head-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--gray-black);
+    padding-bottom: 15px;
+}
+
+.cba-cult-ic-head-part > h1 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--lt-black);
+    margin-bottom: 0;
+}
+
+.cba-cult-ic-head-part > a {
+    color: var(--white);
+    background-color: var(--m-green);
+    padding: 5px 10px 3px;
+    border-radius: 2.5px;
+    cursor: pointer;
+}
+
+.cba-cult-ic-head-part > a > i.cba-currency-add-btn {
+    font-size: 0.95rem;
+}
+
+/* show entries and searchbox */
+.cba-cult-ic-show-entires-n-searchbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px 0px;
+}
+
+/* show entries */
+.cba-cult-ic-show-entries {
+    display: flex;
+    gap: 7.5px;
+    align-items: center;
+}
+
+.cba-cult-ic-show-entries > p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--lt-black);
+}
+
+.cba-cult-ic-show-entries > select {
+    padding: 5px 7.5px 3px;
+    border: 1px solid var(--gray-black);
+    border-radius: 2.5px;
+}
+
+/* searchbox */
+.cba-cult-ic-searchbox {
+    display: flex;
+    gap: 7.5px;
+    align-items: center;
+}
+
+.cba-cult-ic-searchbox > label {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--lt-black);
+    margin-top: 5px;
+}
+
+.cba-cult-ic-searchbox > input {
+    width: 200px;
+    border: 1px solid var(--gray-black);
+    border-radius: 2.5px;
+    padding: 5px 10px 3px;
+    margin-bottom: 0;
+}
+
+/* table style */
+.cba-cult-table-container > table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* thead */
+.cba-cult-table-container > table > thead > tr > th {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--lt-black);
+    background-color: var(--gray-white);
+}
+
+/* tbody */
+.cba-cult-table-container > table > tbody > tr > td {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.cba-cult-table-container > table > tbody > tr:hover {
+    background-color: var(--gray-white)!important;
+}
+
+/* status style */
+/* active */
+.cba-cult-table-container > table > tbody > tr > td > span.cba-cult-tc-sta-ac {
+    color: var(--green);
+    background-color: var(--lt-green);
+    font-size: 0.775rem;
+    padding: 3px 10px 3px;
+    border-radius: 15px;
+}
+
+/* inactive */
+.cba-cult-table-container > table > tbody > tr > td > span.cba-cult-tc-sta-iac {
+    color: var(--red);
+    background-color: var(--lt-red);
+    font-size: 0.775rem;
+    padding: 3px 10px 3px;
+    border-radius: 15px;
+}
+
+/* action style */
+.cba-cult-table-container > table > tbody > tr > td > div {
+    display: flex;
+    gap: 7.5px;
+    align-items: center;
+}
+
+/* edit icon */
+.cba-cult-table-container > table > tbody > tr > td > div > i.cba-cult-tc-add-icon {
+    color: var(--green);
+    background-color: var(--lt-green);
+    border: 1px solid var(--green);
+    padding: 7.5px 6px 6px;
+    cursor: pointer;
+}
+
+/* delete icon */
+.cba-cult-table-container > table > tbody > tr > td > div > i.cba-cult-tc-remove-icon {
+    color: var(--red);
+    background-color: var(--lt-red);
+    border: 1px solid var(--red);
+    padding: 7.5px 6px 6px;
+    cursor: pointer;
+}
+
+/* pagination style */
+.cba-cult-tc-pagination-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cba-cult-tc-pagination-con > p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.cba-cult-tc-pagination {
+    display: flex;
+    gap: 7.5px;
+    align-items: center;
+}
+
+.cba-cult-tc-pagination > button {
+    background-color: var(--gray-white);
+    border-radius: 2.5px;
+    border: 1px solid var(--gray-white);
+    color: var(--lt-black);
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding: 4.5px 7.5px 2.5px 7.5px;
+}
+
+.cba-cult-tc-pagination > p {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 0;
+    padding: 4.5px 10px 2.5px;
+    background-color: var(--m-lt);
+    border-radius: 2.5px;
+}

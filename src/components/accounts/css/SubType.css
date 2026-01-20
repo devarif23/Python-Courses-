@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --gray-white: #F0F1F2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --light-black: #212523;
+    --light-black-op: #21252350;
+    --main-green: #157343;
+    --main-light: #37A000;
+    --orange: #FD7E14;
+    --green: #008000;
+    --light-green: #e9f6ec;
+    --red: #FF0000;
+    --light-red: #fbeaec;
+    /* === FONTS SIZE FOR HEADING === */
+    --primary-head: 22px;
+    --secondary-head: 1.125rem;
+    --secondary: 1rem;
+    --primary-para: 0.825rem;
+}
+
+
+.st-sh-parent{
+    width: 100%;
+    padding: 20px;
+}
+.st-sh-child-container{
+    background-color: var(--white);
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+/* === TOP MENU ITEMS === */
+.st-sh-top-menu-items {
+    border-radius: 5px;
+    background-color: var(--white);
+   /*  box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.3); */
+    padding: 8px 0px 8px 8px;
+}
+
+.st-sh-top-menu-items ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+.st-sh-top-menu-items li {
+    height: 50px;
+}
+
+.st-sh-top-menu-items a {
+    height: 100%;
+    padding: 0px 20px;
+    color: var(--black);
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+}
+
+.st-sh-menu-items a:hover {
+    color: var(--red);
+}
+
+/* === ACTIVE MENU === */
+.st-sh-active-item a {
+    background-color: var(--main-green);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+/* === DRAFT SALE SECITON === */
+.st-sh-draft-sale-section{
+    width: 100%;
+
+}
+/* === DRAFT SALE TOP ITEMV === */
+.st-sh-draft-sale-top-item{
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.st-sh-draft-sale-top-item p{
+    font-size: var(--secondary);
+}
+.st-sh-sub-account {
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--main-green);
+}
+/* === SHOW AND SEARCH CONTAINER === */
+.st-sh-show-and-search-container{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.st-sh-show-container{
+    gap: 5px;
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+}
+.st-sh-show-container select{
+    padding: 2px 3px 2px 8px;
+}
+.st-sh-show-container select:focus{
+    outline: none;
+}
+/* === SEARCH === */
+.st-sh-search-container{
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+.st-sh-search-container input{
+    width: 400px;
+    padding: 5px 10px;
+    border: 1px solid var(--light-black-op);
+}
+.st-sh-search-container input:focus{
+    outline: none;
+}
+/* === MANAGE SALE DETAILS SECTION === */
+.st-manage-sale-details-section{
+    width: 100%;
+    padding: 0px 20px;
+}
+/* === TABLE === */
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 10px;
+    border: 1px solid var(--light-black-op);
+}
+table th{
+    font-size: var(--secondary);
+    font-weight: 500;
+}
+.st-text-center{
+    width: 10%;
+    text-align: center;
+}
+.st-text-center p{
+    padding: 5px 0px;
+    border-radius: 3px;
+    color: var(--main-green);
+    background-color: var(--light-green);
+}
+.st-sh-edit-trash-icon{
+    gap: 10px;
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.st-sh-edit-icon i{
+    transition: all 0.5s ease-in-out;
+    padding: 5px;
+    color: var(--orange);
+    background-color: var(--light-red);
+    border: 1px solid var(--red);
+}
+.st-sh-edit-icon i:hover{
+    background-color: var(--light-orange);
+    color: var(--white);
+}
+.st-sh-trash-icon i{
+    transition: all 0.5s ease-in-out;
+    padding: 5px;
+    color: var(--red);
+    background-color: var(--light-red);
+    border: 1px solid var(--red);
+}
+.st-sh-trash-icon i:hover{
+    background-color: var(--red);
+    color: var(--white);
+}
+.sh-icon-container{
+    width: 10%;
+}
+table tr:hover{
+    background-color: rgba(92, 91, 91, 0.103);
+}
+/* === SLIDE PAGES === */
+.st-sh-slider-pages {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.st-sh-slide-right-item {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.st-sh-slide-right-item a {
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: var(--black);
+    background-color: var(--light-black-op);
+}
+
+.st-sh-slide-right-item p {
+    padding: 6px 15px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--main-green);
+}

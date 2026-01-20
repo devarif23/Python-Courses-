@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --gray-white: #F0F1F2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --lt-black: #212523;
+    --lt-black-op: #21252350;
+    --m-green: #157343;
+    --m-lt: #37A000;
+    --orange: #FD7E14;
+    --green: #008000;
+    --lt-green: #e9f6ec;
+    --red: #FF0000;
+    --lt-red: #fbeaec;
+    /* === FONTS SIZE FOR HEADING === */
+    --primary-head: 22px;
+    --secondary-head: 1.125rem;
+    --secondary: 1rem;
+    --primary-para: 0.825rem;
+}
+/* === PARENT SECTION === */
+.SaleReturn-sh-parent-section{
+    width: 100%;
+    padding: 30px 20px 20px 28px;
+}
+/* === CHILD SECTION === */
+.SaleReturn-sh-child-section{
+    border-radius: 5px;
+    width: 100%;
+    background-color: var(--white);
+    margin-top: 30px!important;
+}
+/* === SALE RETURN TOP ITEMS === */
+.SaleReturn-sh-sale-return-top-items{
+    gap: 0px 30px;
+    padding-left: 18px;
+    padding-top: 15px!important;
+    padding-bottom: 15px!important;
+    background-color: var(--white);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.SaleReturn-sh-active a{
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.SaleReturn-sh-active{
+    background-color: var(--m-green);
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+.SaleReturn-sh-list a{
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.SaleReturn-sh-list a:hover{
+    color: var(--orange);
+}
+/* === SALE NUMBER CONTAINER === */
+.SaleReturn-sh-sale-number-container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+.SaleReturn-sh-sale-number-container p{
+    font-size: var(--secondary-head);
+}
+.SaleReturn-sh-sale-number-container input{
+    width: 250px;
+    text-align: left;
+    padding: 7px 10px 5px;
+    font-size: var(--secondary);
+    border: 1px solid var(--lt-black-op);
+}
+.SaleReturn-sh-sale-number-container input:focus{
+    outline: none;
+}
+.SaleReturn-sh-sale-number-container a{
+    background-color: var(--m-green);
+    color: var(--white);
+    font-size: var(--secondary);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.SaleReturn-sh-purchase-return > p{
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 20px;
+    color: var(--black);
+    white-space: nowrap!important;
+}
+
+hr {
+    margin: 0;
+}

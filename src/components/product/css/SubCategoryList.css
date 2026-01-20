@@ -1,0 +1,334 @@
+/* -- fonts -- */
+@import url('https://fonts.sc-googleapis.sc-com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100.sc-.sc-900;1,100.sc-.sc-900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap');
+
+/* -- root -- */
+
+:root {
+    --gray-white: #F0F1F2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --light-black: #212523;
+    --light-black-op: #21252350;
+    --main-green: #157343;
+    --main-light: #37A000;
+    --light-orange: #FD7E14;
+    --green: #008000;
+    --light-green: #e9f6ec;
+    --red: #FF0000;
+    --light-red: #fbeaec;
+}
+
+/* ---------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+  
+}
+
+
+
+::selection {
+    color: var(--white);
+    background-color: var(--main-light);
+}
+
+/* -- category container style -- */
+
+.sc-category-container {
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px 20px 20px 30px;
+}
+
+/* -- top menus style--  */
+
+.sc-top-menus {
+    background-color: var(--white);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.sc-top-menus ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    margin-left: -20px;
+    margin-bottom: -1px;
+}
+
+.sc-top-menus ul li a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* -- active menu style -- */
+
+.sc-active-menu {
+    color: var(--white)!important;
+    background-color: var(--main-green);
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* -- menu hover style -- */
+
+.sc-light-up:hover {
+    color: var(--light-orange);
+}
+
+/* -- list container style -- */
+
+.sc-list-container {
+    background-color: var(--white);
+    padding: 0px 20px;
+}
+
+/* -- heading-add-new-btn style -- */
+
+.sc-heading-add-new-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--gray-black) ;
+    padding: 20px 0px ;
+}
+
+.sc-heading h2 {
+    color: var(--light-black);
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+/* -- add-new-btn style -- */
+
+.sc-add-new-btn {
+    display: flex;
+    gap: 5px;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.sc-add-new-btn {
+    background-color: var(--main-green);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.sc-add-new-btn a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.sc-add-icon {
+    color: var(--white);
+    font-size: 20px;
+}
+
+/* -- list-short-dpdwn-search-box style -- */
+
+.sc-list-short-dpdwn-search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px 0px!important;
+}
+
+/* -- list-short-dpdwn style -- */
+
+.sc-list-short-dpdwn {
+    display: flex;
+    gap: 7.5px;
+    align-items: center;
+}
+
+.sc-list-short-dpdwn h3 {
+    color: var(--light-black);
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: -10px;
+    margin-bottom: 0;
+}
+
+.sc-list-short-dpdwn select {
+    color: var(--light-black);
+    appearance: none;
+    height: 36px;
+    width: 40px;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 2.sc-5px;
+}
+
+/* -- search-box style -- */
+
+.sc-search-box {
+    display: flex;
+    align-items: center;
+}
+
+.sc-search-box label {
+    color: var(--light-black);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.sc-search-box input {
+    outline: none;
+    height: 30px;
+    width: 250px;
+    border: 1px solid var(--gray-black);
+}
+
+/* -- table-list style --*/
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        padding: 0rem;
+        display: block;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scrollbar-width: thin;
+        scrollbar-color: var(--black);
+    }
+}
+
+/* -- thead style -- */
+
+thead {
+    cursor: pointer;
+}
+
+th, td {
+    border: 1px solid var(--gray-black);
+    padding: 10px 15px;
+}
+
+thead tr th {
+    font-size: 17.sc-5px;
+    font-weight: 600;
+    text-align: left;
+}
+
+tbody tr td {
+    font-size: 14px;
+}
+
+tbody tr:hover {
+    background-color: var(--gray-white);
+}
+
+/* -- tbody style -- */
+
+/* status style */
+
+.sc-active {
+    color: var(--green);
+    background-color: var(--light-green);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2.5px 7.5px;
+    border-radius: 5px;
+}
+
+.sc-inactive {
+    color: var(--red);
+    background-color: var(--light-red);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2.5px 7.5px;
+    border-radius: 5px;
+}
+
+/* -- action style -- */
+
+.sc-edit-icon {
+    color: var(--green);
+    background-color: var(--light-green);
+    padding: 7px 7px;
+    margin-right: 2.5px;
+    border: 1px solid var(--green);
+    font-size: 20px;
+}
+
+.sc-edit-icon:hover {
+    background-color: var(--light-black-op);
+}
+
+.sc-delete-icon {
+    color: var(--red);
+    background-color: var(--light-red);
+    padding: 7px 7px;
+    margin-left: 2.5px;
+    border: 1px solid var(--red);
+    font-size: 20px;
+}
+
+.sc-delete-icon:hover {
+    background-color: var(--light-black-op);
+}
+
+/* -- no data style */
+
+.sc-no-data-available th {
+    font-size: 14px;
+    font-weight:500;
+    color: var(--black);
+    background-color: var(--gray-white);
+}
+
+
+/* -- entries-details-list-page-btn style -- */
+
+.sc-entries-details-list-page-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px 15px;
+}
+
+.sc-entries-details {
+    color: var(--black);
+    font-size: 15px;
+}
+
+.sc-list-page-btn {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.sc-list-page-btn button {
+    color: var(--light-black);
+    background-color: var(--gray-white);
+    padding: 8px 14px 5px;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sc-list-page-btn h4 {
+    color: var(--white);
+    background-color: var(--main-light);
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px 14px 10px;
+    margin-bottom: 0;
+    border-radius: 5px;
+}

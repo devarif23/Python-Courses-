@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --gray-white: #F0F1F2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --lt-black: #212523;
+    --lt-black-op: #21252350;
+    --m-green: #157343;
+    --m-lt: #37A000;
+    --lt-orange: #FD7E14;
+    --green: #008000;
+    --lt-green: #e9f6ec;
+    --red: #FF0000;
+    --lt-red: #fbeaec;
+    /* === FONTS SIZE FOR HEADING === */
+    --primary-head: 22px;
+    --secondary-head: 1.125rem;
+    --secondary: 1rem;
+    --primary-para: 0.825rem;
+}
+
+
+.mdsl-sh-parent{
+    width: 100%;
+    padding: 20px;
+}
+.mdsl-sh-child-container{
+    background-color: var(--white);
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+/* === DRAFT SALE SECITON === */
+.mdsl-sh-draft-sale-section{
+    width: 100%;
+}
+/* === DRAFT SALE TOP ITEMV === */
+.mdsl-sh-draft-sale-top-item{
+    height: 80px;
+    padding: 20px;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mdsl-sh-draft-sale-top-item p{
+    font-size: var(--secondary);
+}
+/* === DRAFT SALE TOP RIGHT ITMES === */
+.mdsl-sh-draft-sale-top-right-items{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+/* === FILTR === */
+.mdsl-sh-filter{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--m-green);
+}
+.mdsl-sh-filter a{
+    color: white;
+    font-size: var(--primary-para);
+}
+
+/* === FILTER DROPDOWN SECTION === */
+.mdsl-sh-filter-drop-down-section{
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    align-items: flex-end;
+    border-bottom: 1px solid var(--gray-black)!important;
+}
+/* === SH DRAFT CONTAINER === */
+.mdsl-sh-draft-container{
+    line-height: 2em;
+}
+.mdsl-sh-draft-container p{
+    font-size: var(--secondary);
+}
+.mdsl-sh-draft-container input{
+    padding: 5px 8px;
+    border: 1px solid var(--gray-black)!important;
+}
+.mdsl-sh-draft-container input:focus{
+    outline: none;
+}
+/* === FILTER SEARCH === */
+.mdsl-sh-filter-search-box{
+    background-color: var(--m-green);
+    padding: 4px 10px;
+    color: var(--white);
+    gap: 5px;
+    border-radius: 5px;
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 13.5px;
+}
+/* === FILTER RESET === */
+.mdsl-sh-filter-reset-box{
+    background-color: var(--red);
+    padding: 4px 10px;
+    color: var(--white);
+    gap: 5px;
+    border-radius: 5px;
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 13.5px;
+}
+.mdsl-sh-line{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+/* === SHOW AND SEARCH CONTAINER === */
+.mdsl-sh-show-and-search-container{
+    padding: 20px 20px 0px 20px!important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mdsl-sh-show-container{
+    gap: 5px;
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+}
+.mdsl-sh-show-container select{
+    padding: 5px 10px 5px 10px;
+}
+.mdsl-sh-show-container select:focus{
+    outline: none;
+}
+/* === SEARCH === */
+.mdsl-sh-search-container{
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+.mdsl-sh-search-container input{
+    width: 400px;
+    padding: 5px 10px;
+    border: 1px solid var(--lt-black-op);
+}
+.mdsl-sh-search-container input:focus{
+    outline: none;
+}
+/* === MANAGE SALE DETAILS SECTION === */
+.mdsl-manage-sale-details-section{
+    width: 100%;
+    padding: 0px 20px!important;
+}
+/* === TABLE === */
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 10px;
+    border: 1px solid var(--lt-black);
+}
+table th{
+    font-size: var(--secondary);
+    font-weight: 500;
+}
+
+/* === SLIDE PAGES === */
+.mdsl-sh-slider-pages {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mdsl-sh-slide-right-item {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.mdsl-sh-slide-right-item a {
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: var(--black);
+    background-color: var(--lt-black-op);
+}
+
+.mdsl-sh-slide-right-item p {
+    padding: 6px 15px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--m-green);
+}

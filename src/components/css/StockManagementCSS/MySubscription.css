@@ -1,0 +1,314 @@
+/* -- fonts -- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap');
+
+/* -- root -- */
+
+:root {
+    --gray-white: #F0F1F2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --lt-black: #212523;
+    --lt-black-op: #21252350;
+    --m-green: #157343;
+    --m-light: #37A000;
+    --orange: #FD7E14;
+    --green: #008000;
+    --lt-green: #e9f6ec;
+    --red: #FF0000;
+    --lt-red: #fbeaec;
+    --blue: #0000FF;
+    --lt-blue: #e6e6ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+}
+
+::selection {
+    color: var(--white);
+    background-color: var(--m-light);
+}
+
+/* -- category container style -- */
+
+.cba-mysubdetails-subscription-container {
+    width: 100%!important;
+    margin-top: 25px;
+    padding: 25px 20px 50px 25px;
+}
+
+/* -- list container style -- */
+
+.cba-mysubdetails-list-container {
+    background-color: var(--white);
+    padding: 0px 20px;
+    border-radius: 5px;
+}
+
+/* -- heading-add-new-btn style -- */
+
+.cba-mysubdetails-heading-add-new-btn {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-bottom: 1px solid var(--gray-black) ;
+}
+
+.cba-mysubdetails-heading h2 {
+    color: var(--lt-black);
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding: 15px 0px;
+}
+
+/* -- list-short-dpdwn-search-box style -- */
+
+.cba-mysubdetails-list-short-dpdwn-search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center!important;
+    padding: 10px 0px;
+}
+
+/* -- list-short-dpdwn style -- */
+
+.cba-mysubdetails-list-short-dpdwn {
+    display: flex;
+    gap: 7.5px;
+    align-items: center;
+}
+
+.cba-mysubdetails-list-short-dpdwn h3 {
+    color: var(--lt-black);
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.cba-mysubdetails-list-short-dpdwn select {
+    color: var(--lt-black);
+    appearance: none;
+    height: 35px;
+    width: 38px;
+    outline: none;
+    border-radius: 2.5px;
+}
+
+/* -- search-box style -- */
+
+.cba-mysubdetails-search-box {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.cba-mysubdetails-search-box legend {
+    color: var(--lt-black);
+}
+
+.cba-mysubdetails-search-box input {
+    outline: none;
+    height: 25px;
+    width: 193px;
+    border: 1px solid var(--gray-black);
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .cba-mysubdetails-search-box input {
+        width: 115px;
+    }
+}
+
+/* -- table-list style --*/
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        padding: 0rem;
+        display: block;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scrollbar-width: thin;
+        scrollbar-color: var(--black);
+    }
+}
+
+/* -- thead style -- */
+                
+.cba-mysubdetails-table-list, table, thead, tr, th{
+   font-size:10px; 
+}
+ thead {
+    cursor: pointer;
+}
+
+th, td {
+    border: 1px solid var(--gray-black);
+    padding: 10px 15px;
+}
+
+thead tr th {
+    font-size: 1rem;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+}
+
+tbody tr td {
+    font-size: 0.875rem;
+}
+
+tbody tr:hover {
+    background-color: var(--gray-white);
+}
+
+/* -- tbody style -- */
+
+/* -- action btn style -- */
+
+.cba-mysubdetails-action-btn {
+    display: flex;
+    gap: 7.5px;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* status style */
+
+.cba-mysubdetails-active {
+    color: var(--green);
+    background-color: var(--lt-green);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2.5px 7.5px;
+    border-radius: 5px;
+}
+
+.cba-mysubdetails-inactive {
+    color: var(--red);
+    background-color: var(--lt-red);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2.5px 7.5px;
+    border-radius: 5px;
+}
+
+.cba-mysubdetails-payment-received {
+    color: var(--green);
+    background-color: var(--lt-green);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2.5px 7.5px;
+    border-radius: 5px;
+}
+
+.cba-mysubdetails-payment-pending {
+    color: var(--blue);
+    background-color: var(--lt-blue);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2.5px 7.5px;
+    border-radius: 5px;
+}
+
+.cba-mysubdetails-payment-due {
+    color: var(--red);
+    background-color: var(--lt-red);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2.5px 7.5px;
+    border-radius: 5px;
+}
+
+/* -- action style -- */
+
+.cba-mysubdetails-edit-icon {
+    color: var(--green);
+    background-color: var(--lt-green);
+    padding: 5px 5px;
+    border: 1px solid var(--green);
+    font-size: 20px;
+    border-radius: 0px;
+}
+
+.cba-mysubdetails-edit-icon:hover {
+    background-color: var(--lt-black-op);
+}
+
+.cba-mysubdetails-delete-icon {
+    color: var(--red);
+    background-color: var(--lt-red);
+    padding: 5px 5px;
+    border: 1px solid var(--red);
+    font-size: 20px;
+    border-radius: 0px;
+}
+
+.cba-mysubdetails-delete-icon:hover {
+    background-color: var(--lt-black-op);
+}
+
+/* -- no data style */
+
+.cba-mysubdetails-no-data-available th {
+    font-size: 14px;
+    font-weight:500;
+    color: var(--black);
+    background-color: var(--gray-white);
+}
+
+/* -- entries-details-list-page-btn style -- */
+
+.cba-mysubdetails-entries-details-list-page-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    margin-top: -10px;
+}
+
+.cba-mysubdetails-entries-details {
+    color: var(--black);
+    font-size: 15px;
+}
+
+.cba-mysubdetails-list-page-btn {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.cba-mysubdetails-list-page-btn button {
+    color: var(--lt-black);
+    background-color: var(--gray-white);
+    padding: 6px 14px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cba-mysubdetails-list-page-btn h4 {
+    color: var(--white);
+    background-color: var(--m-light);
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px 12px 7px;
+    border-radius: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* tk symbol */
+.cba-mysubdetails-tk-symbol {
+    color: var(--black);
+}

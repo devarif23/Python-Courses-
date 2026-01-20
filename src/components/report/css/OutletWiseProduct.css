@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --gray-white: #F0F1F2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --lt-black: #212523;
+    --lt-black-op: #21252350;
+    --m-green: #157343;
+    --m-lt: #37A000;
+    --orange: #FD7E14;
+    --green: #008000;
+    --lt-green: #e9f6ec;
+    --red: #FF0000;
+    --lt-red: #fbeaec;
+    /* === FONTS SIZE FOR HEADING === */
+    --primary-head: 22px;
+    --secondary-head: 1.125rem;
+    --secondary: 1rem;
+    --primary-para: 0.825rem;
+}
+
+/* === TOP MENU ITEMS === */
+.owp-sh-top-menu-items {
+    border-radius: 5px;
+    background-color: var(--white);
+    padding: 15px 0px 3px 0px; 
+    margin: 30px 20px 10px 20px;
+
+}
+
+.owp-sh-top-menu-items ul {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: -15px;
+}
+
+.owp-sh-top-menu-items li {
+    /* height: 50px; */
+}
+
+.owp-sh-top-menu-items a {
+    height: 100%;
+    padding: 0px 20px;
+    color: var(--black);
+    font-size: var(--secondary);
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding: 12px 20px 8px;
+}
+
+.owp-sh-menu-items a:hover {
+    color: var(--orange);
+}
+
+/* === ACTIVE MENU === */
+.owp-sh-active-item a {
+    background-color: var(--m-green);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+/* === PARENT CONTAINER === */
+.owp-sh-parent-container {
+    width: 100%;
+}
+
+/* === CHILD CONTAINER === */
+.owp-sh-child-container {
+    background-color: var(--white);
+    margin: 20px;
+    border-radius: 5px;
+}
+
+/* === STOCK REPORT CARD SECTION ===  */
+.owp-sh-stock-report-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.owp-sh-stock-report-section p {
+    font-size: var(--secondary);
+}
+
+.owp-sh-stock-report-section a {
+    background-color: var(--m-green);
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.owp-sh-stock-report-section i {
+    margin-right: 5px;
+}
+
+/* === FILTER DROPDOWN SECTION === */
+.owp-sh-filter-drop-down-section {
+    width: auto;
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    align-items: flex-end;
+}
+
+/* === SH DRAFT CONTAINER === */
+.owp-sh-draft-container {
+    line-height: 2em;
+}
+
+.owp-sh-draft-container input {
+    width: 100%;
+    padding: 5px 8px;
+    border-radius: 0px!important;
+    border: 1px solid var(--gray-black);
+    margin-bottom: -1px;
+    border-radius: 4px;
+}
+
+.owp-sh-draft-container input:focus {
+    outline: none;
+}
+
+.owp-sh-draft-container select {
+    width: 100%;
+    padding: 5px 8px;
+    border-radius: 0px;
+    border: 1px solid var(--gray-black);
+}
+
+.owp-sh-draft-container select:focus {
+    outline: none;
+}
+
+/* === FILTER SEARCH === */
+.owp-sh-filter-search-box {
+    background-color: var(--m-green);
+    padding: 4px 10px;
+    color: var(--white);
+    gap: 5px;
+    border-radius: 5px;
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin-bottom: 3px;
+}
+
+/* === FILTER RESET === */
+.owp-sh-filter-reset-box {
+    background-color: var(--red);
+    padding: 4px 10px;
+    color: var(--white);
+    gap: 5px;
+    border-radius: 5px;
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3px;
+}
+
+.owp-sh-line {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 0px 30px;
+}
+
+th,
+td {
+    border: 1px solid var(--lt-black-op);
+    padding: 5px;
+}
+
+.owp-text-end {
+    text-align: end;
+}
+
+.owp-text-start {
+    text-align: left;
+}
+
+.owp-text-last {
+    width: 8%;
+}
+
+/* === SHOW & FILE & SEARCH === */
+
+.owp-show-file-search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px 0px;
+}
+
+.owp-sh-show-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: var(--secondary);
+}
+
+.owp-sh-show-container select {
+    height: 36px;
+    width: 42px;
+    text-align: center;
+    border-radius: 0px;
+    font-size: var(--secondary);
+}
+
+/* === FILE CONTAINER === */
+.owp-sh-file-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.owp-sh-file-container a {
+    background-color: var(--m-green);
+    color: var(--white);
+    padding: 5px 10px 3px;
+    border-radius: 0px;
+}
+
+/* === SHOW SEARCH CONTAINER === */
+.owp-sh-show-search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--secondary);
+}
+
+.owp-sh-show-search-container input {
+    padding: 5px 8px;
+    border-radius: 0px;
+    border: 1px solid var(--gray-black);
+}
+
+.owp-sh-show-search-container input:focus {
+    outline: none;
+}
+
+/* === PRODUCTS DETAILS TABLE === */
+.owp-sh-product-details-table {
+    padding: 10px 20px 0px;
+}
+
+.owp-sh-product-details-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.owp-sl {
+    font-size: 0.827rem;
+    font-weight: normal;
+}
+
+.owp-sh-text-right {
+    text-align: right;
+    font-size: 0.827rem;
+    font-weight: normal;
+}
+
+.owp-sh-text-center {
+    text-align: center;
+    font-size: 0.827rem;
+}
+
+tfoot tr td {
+    font-size: 0.827rem;
+}
+
+.owp-sh-total {
+    font-weight: 500;
+    text-align: right;
+}
+
+.owp-sh-amount {
+    font-weight: 500;
+    text-align: right;
+}
+
+span {
+    color: var(--red);
+}
+
+span p {
+    color: var(--green);
+}
+
+/* === SLIDE PAGES === */
+.owp-sh-slider-pages {
+    padding: 10px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.owp-sh-slide-right-item {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.owp-sh-slide-right-item a {
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: var(--black);
+    background-color: var(--gray-white);
+}
+
+.owp-sh-slide-right-item p {
+    padding: 6px 15px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--m-lt);
+}
+@media(max-width:768px){
+    table{
+        width: 100%;
+    }
+    .owp-sh-product-details-table {
+        width: 100%;
+        overflow: auto;
+    }
+}

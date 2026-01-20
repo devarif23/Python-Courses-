@@ -1,0 +1,262 @@
+/* -- fonts -- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap');
+
+/* -- root -- */
+
+:root {
+    --gray-white: #F0F1F2; /* For body*/
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --lt-black: #212523;
+    --lt-black-op: #21252350;
+    --m-green: #157343;
+    --m-light: #37A000;
+    --orange: #FD7E14;
+    --green: #008000;
+    --lt-green: #e9f6ec;
+    --red: #FF0000;
+    --lt-red: #fbeaec;
+}
+
+/* ------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+::selection {
+    color: var(--white);
+    background-color: var(--m-light);
+}
+
+/* -- checkout main container style -- */
+
+.cba-plancheckout-checkout-main-container {
+    width: 100%;
+    margin-top: 25px;
+    padding: 0px 20px 30px 25px;
+}
+
+/* -- checkout inner container style -- */
+
+.cba-plancheckout-checkout-inner-container {
+    background-color: var(--white);
+    padding: 0px 20px;
+}
+
+/* -- heading-add-new-btn style -- */
+
+.cba-plancheckout-heading-price-plan-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--gray-black);
+    padding: 15px 0px;
+}
+
+.cba-plancheckout-heading h2 {
+    color: var(--lt-black);
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+/* -- add-new-btn style -- */
+
+.cba-plancheckout-price-plan-btn {
+    display: flex;
+    gap: 5px;
+    justify-content: baseline;
+    align-items: center;
+    background-color: var(--m-green);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.cba-plancheckout-price-plan-btn a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.cba-plancheckout-add-icon {
+    color: var(--white);
+    font-size: 20px;
+}
+
+/* -- checkout container style */
+
+.cba-plancheckout-checkout-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* -- cc subcon one style -- */
+
+.cba-plancheckout-cc-subcon-one {
+    width: 50%;
+    padding-right: 25px;
+    border-right: 2px solid var(--gray-black);
+}
+
+.cba-plancheckout-cc-subcon-two {
+    width: 50%;
+    padding-left: 25px;
+    padding-bottom: 20px;
+}
+
+/* -- cc subcon one heading style -- */
+
+.cba-plancheckout-package-modules-heading h3 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.cba-plancheckout-package-modules-heading {
+    margin-top: 30px;
+}
+
+/* -- required star style -- */
+
+.cba-plancheckout-required {
+    color: var(--red);
+}
+
+/* -- package modules list style -- */
+
+.cba-plancheckout-package-modules-list {
+    display: flex;
+    gap: 25px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* -- pm list one style -- */
+
+.cba-plancheckout-pm-list-one {
+    width: 50%;
+}
+
+.cba-plancheckout-pm-list-two {
+    width: 50%;
+}
+
+.cba-plancheckout-pm-list-one ul {
+    list-style-type: none;
+    padding-inline-start: 0px!important;
+}
+
+.cba-plancheckout-pm-list-one ul li {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--lt-black);
+    background-color: var(--gray-white);
+    border: 1px solid var(--gray-black);
+    padding: 7.5px 15px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+/* -- pm list two style -- */
+
+.cba-plancheckout-pm-list-two ul {
+    list-style-type: none;
+    padding-inline-start: 0px!important;
+}
+
+.cba-plancheckout-pm-list-two ul li {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--lt-black);
+    background-color: var(--gray-white);
+    border: 1px solid var(--gray-black);
+    padding: 7.5px 15px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+/* -- cc subcon two style -- */
+
+.cba-plancheckout-payment-method-duration {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--gray-black);
+}
+
+.cba-plancheckout-payment-method-duration .cba-plancheckout-pmd-text h4 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-bottom: 34px;
+}
+
+/* -- payment method style -- */
+
+.cba-plancheckout-pmd-selection {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 75%;
+}
+
+.cba-plancheckout-pmd-selection select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gray-black);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--lt-black);
+}
+
+/* table style */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th {
+    background-color: var(--gray-white);
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+}
+
+table td {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--lt-black);
+    padding: 10px;
+    border: 1px solid var(--gray-black);
+}
+
+/* -- payment method style -- */
+
+/* pay btn */
+
+.cba-plancheckout-pay-btn button {
+    background-color: var(--m-green);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 1536px) {
+    .cba-plancheckout-cc-subcon-two {
+        padding-bottom: 20px;
+    }
+}

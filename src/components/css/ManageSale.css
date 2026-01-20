@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --gray-white: #F0F1F2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --lt-black: #212523;
+    --lt-black-op: #21252350;
+    --m-green: #157343;
+    --m-lt: #37A000;
+    --orange: #FD7E14;
+    --green: #008000;
+    --lt-green: #e9f6ec;
+    --red: #FF0000;
+    --lt-red: #fbeaec;
+    /* === FONTS SIZE FOR HEADING === */
+    --primary-head: 22px;
+    --secondary-head: 1.125rem;
+    --secondary: 1rem;
+    --primary-para: 0.825rem;
+}
+
+/* === COUNTER SECTION === */
+.managesale-counter-section {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* === TOTAL SALE SECTION === */
+.managesale-total-sale-section {
+    width: 100%;
+    gap: 10px;
+    background-color: var(--white);
+    box-shadow: 3px 3px 5px solid rgb(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* === HOME ICON === */
+.managesale-total-sale-section i {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    padding: 10px 8px;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* === TOTAL SALE SECTION === */
+.managesale-total-paid-section {
+    width: 100%;
+    gap: 10px;
+    background-color: var(--white);
+    box-shadow: 3px 3px 5px solid rgb(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* === HOME ICON === */
+.managesale-total-paid-section i {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    padding: 10px 8px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--m-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* === TOTAL DUE SECTION === */
+.managesale-total-due-section {
+    width: 100%;
+    gap: 10px;
+    background-color: var(--white);
+    box-shadow: 3px 3px 5px solid rgb(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* === HOME ICON === */
+.managesale-total-due-section i {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    padding: 10px 8px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* === SALE TEXT === */
+.managesale-sale-text {
+    line-height: 1.50em;
+}
+
+.managesale-sale-text p {
+    font-size: var(--secondary);
+}
+
+.managesale-sale-text h1 {
+    font-size: var(--primary-head);
+}
+
+/* === MANAGE SECTION === */
+.managesale-manage-section {
+    margin: 20px;
+    border-radius: 5px;
+    background-color: var(--white);
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.3);
+}
+
+/* === MANAGE CONTAINER === */
+.managesale-manage-container {
+    margin: 0px 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray-black);
+}
+
+.managesale-manage-container p {
+    font-size: var(--secondary);
+}
+
+/* === FILTER AND ADD SECTION === */
+.managesale-filter-add-new {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.managesale-filter-container {
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--m-green);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.managesale-filter-container a {
+    color: var(--white);
+}
+
+.managesale-add-new-sale-container {
+    gap: 10px;
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--m-green);
+    display: flex;
+    align-items: center;
+}
+
+.managesale-add-new-sale-container a {
+    color: var(--white);
+}
+
+/* === FILTER CONTAINER ITEMS === */
+.managesale-filter-container-items {
+    height: 70px;
+    padding: 10px 30px;
+    gap: 10px!important;
+    display: flex;
+    align-items: center;
+}
+
+.managesale-invoice-box input {
+    padding: 4px 10px;
+    width: 80px;
+    font-size: 1rem;
+    color: gray;
+}
+
+.managesale-invoice-box input:focus {
+    outline: none;
+}
+
+.managesale-select-input-container select {
+    color: gray;
+    padding: 5px 10px;
+    font-size: 1rem;
+    width: 200px;
+}
+
+.managesale-select-input-container select:focus {
+    outline: none;
+}
+
+.managesale-sale-date-input-box input {
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+    border-radius: 5px!important;
+}
+
+.managesale-sale-date-input-box input:focus {
+    outline: none;
+}
+
+/* === SALE TYPE SELECT BOX === */
+.managesale-sale-type-select-box select {
+    padding: 5px 10px;
+    width: 150px;
+    font-size: 1rem;
+    color: gray;
+}
+
+/* === FIND BUTTON === */
+.managesale-sh-button-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.managesale-sh-find-button a {
+    background-color: var(--m-green);
+    color: var(--white);
+    padding: 7px 10px;
+    border-radius: 3px;
+    font-size: var(--primary-para);
+}
+
+.managesale-sh-reset-button a {
+    background-color: var(--red);
+    color: var(--white);
+    padding: 7px 10px;
+    border-radius: 3px;
+    font-size: var(--primary-para);
+}
+
+/* === SHOW AND SEARCH SECTION === */
+.managesale-show-and-search-section {
+    height: 90px;
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--gray-black);
+    border-bottom: 1px solid var(--gray-black);
+}
+
+/* === SHOW CONTAINER === */
+.managesale-show-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.managesale-show-container p {
+    margin-bottom: 0;
+}
+
+/* === SEARCH CONTAINER === */
+.managesale-search-container > label {
+    margin-right: 10px;
+}
+.managesale-search-container > input {
+    width: 250px;
+    border: 1px solid var(--gray-black);
+    border-radius: 3px;
+    padding: 4px 8px;
+}
+
+.managesale-search-container > input:focus {
+    outline: none;
+}
+
+/* === MANAGE SALE DETAILS SECTION === */
+.managesale-manage-sale-details-section {
+    width: 100%;
+    padding: 0px 25px;
+}
+
+/* === TABLE === */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid var(--lt-black);
+}
+
+table th {
+    font-size: var(--secondary);
+    font-weight: 500;
+}
+
+/* === SLIDE PAGES === */
+.managesale-sh-slider-pages {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.managesale-sh-slide-right-item {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.managesale-sh-slide-right-item a {
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: var(--black);
+    background-color: var(--lt-black-op);
+}
+
+.managesale-sh-slide-right-item p {
+    padding: 6px 15px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--m-green);
+}

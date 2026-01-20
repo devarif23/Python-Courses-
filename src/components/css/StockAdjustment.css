@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --gray-white: #F0F1F2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --light-black: #212523;
+    --light-black-op: #21252350;
+    --main-green: #157343;
+    --main-light: #37A000;
+    --orange: #FD7E14;
+    --green: #008000;
+    --light-green: #e9f6ec;
+    --red: #FF0000;
+    --light-red: #fbeaec;
+    /* === FONTS SIZE FOR HEADING === */
+    --primary-head: 22px;
+    --secondary-head: 1.125rem;
+    --secondary: 1rem;
+    --primary-para: 0.825rem;
+}
+
+/* === PARENT SECTION === */
+.sa-sh-parent-section{
+    width: 100%;
+    padding: 20px;
+}
+/* === CHILD SECTION === */
+.sa-sh-child-section{
+    width: 100%;
+}
+/* === TOP MENU ITEMS === */
+.sa-sh-top-menu-items{
+    border-radius: 5px;
+    background-color: var(--white);
+    padding: 10px 0px 10px 10px;
+}
+.sa-sh-top-menu-items ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.sa-sh-top-menu-items li{
+    height: 50px;
+}
+.sa-sh-top-menu-items a{
+    height: 100%;
+    padding: 0px 20px;
+    color: var(--black);
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+}
+.sa-sh-menu-items a:hover{
+    color: var(--orange)!important;
+}
+/* === ACTIVE MENU === */
+.sa-sh-active-item a{
+    background-color: var(--main-green);
+    color: var(--white);
+    border-radius: 5px;
+}
+/* === REQUISIION LIST SECTION === */
+/* === DRAFT SALE SECITON === */
+.sa-sh-draft-sale-section{
+    width: 100%;
+    background-color: var(--white);
+    margin-top: 20px;
+}
+/* === DRAFT SALE TOP ITEMV === */
+.sa-sh-draft-sale-top-item{
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sa-sh-draft-sale-top-item p{
+    font-size: var(--secondary);
+}
+/* === SHOW AND SEARCH CONTAINER === */
+.sa-sh-show-and-search-container{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sa-sh-show-container{
+    gap: 5px;
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+}
+.sa-sh-show-container select{
+    padding: 5px 2px;
+}
+.sa-sh-show-container select:focus{
+    outline: none;
+}
+/* === SEARCH === */
+.sa-sh-search-container{
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+.sa-sh-search-container input{
+    width: 400px;
+    padding: 5px 10px;
+    border: 1px solid var(--light-black-op);
+}
+.sa-sh-search-container input:focus{
+    outline: none;
+}
+/* === MANAGE SALE DETAILS SECTION === */
+.sa-manage-sale-details-section{
+    width: 100%;
+    padding: 0px 25px;
+}
+/* === TABLE === */
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 10px;
+    border: 1px solid var(--light-black-op);
+}
+table th{
+    font-size: var(--secondary);
+    font-weight: 500;
+}
+/* === EMPTY SECTION === */
+.sa-empty-section p{
+    text-align: center;
+}
+/* === SLIDE PAGES === */
+.sa-sh-slider-pages {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sa-sh-slide-right-item {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.sa-sh-slide-right-item a {
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: var(--black);
+    background-color: var(--light-black-op);
+}
+
+.sa-sh-slide-right-item p {
+    padding: 6px 15px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--main-green);
+}
+/* === DRAFT SALE TOP ITEMV === */
+.sa-sh-requisition-top-item{
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sa-sh-requisition-top-item p{
+    font-size: var(--secondary);
+}
+/* === DRAFT SALE TOP RIGHT ITMES === */
+.sa-sh-draft-sale-top-right-items{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+/* === FILTR === */
+.sa-sh-filter{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--main-green);
+}
+.sa-sh-filter a{
+    color: white;
+    font-size: var(--primary-para);
+}
+
+/* === FILTER DROPDOWN SECTION === */
+.sa-sh-filter-drop-down-section{
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+ /*    align-items: flex-end; */
+}
+/* === SH DRAFT CONTAINER === */
+.sa-sh-draft-container{
+    line-height: 2em;
+}
+.sa-sh-draft-container input{
+    padding: 5px 8px;
+    border: 1px solid var(--light-black);
+    
+}
+.sa-sh-draft-container input:focus{
+    outline: none;
+}
+/* === FILTER SEARCH === */
+.sa-sh-filter-search-box{
+    background-color: var(--main-green);
+    padding: 4px 10px;
+    color: var(--white);
+    gap: 5px;
+    border-radius: 5px;
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+/* === FILTER RESET === */
+.sa-sh-filter-reset-box{
+    background-color: var(--red);
+    padding: 4px 10px;
+    color: var(--white);
+    gap: 5px;
+    border-radius: 5px;
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.sa-sh-line{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+/* === SHOW AND SEARCH CONTAINER === */
+.sa-sh-show-and-search-container{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sa-sh-show-container{
+    gap: 5px;
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+}
+.sa-sh-show-container select{
+    padding: 5px 2px;
+}
+.sa-sh-show-container select:focus{
+    outline: none;
+}
+/* === SEARCH === */
+.sa-sh-search-container{
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+.sa-sh-search-container input{
+    width: 400px;
+    padding: 5px 10px;
+    border: 1px solid var(--light-black-op);
+}
+.sa-sh-search-container input:focus{
+    outline: none;
+}

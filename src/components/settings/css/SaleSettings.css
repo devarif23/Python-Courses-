@@ -1,0 +1,443 @@
+/* -- font link -- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* -- root css -- */
+
+:root {
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --gray-white: #F0F1F2; /* For body*/
+    --green: #008000;
+    --lp-green: #F8FAF8;
+    --lt-black-op: #21252350;
+    --lt-black: #212523;
+    --lt-gray: #EFEFEF;
+    --lt-green: #e9f6ec;
+    --orange: #FD7E14;
+    --lt-red: #fbeaec;
+    --m-green: #157343;
+    --m-lt: #37A000;
+    --red: #FF0000;
+    --white: #FFFFFF;
+}
+
+/* -- universal style -- */
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* -- web app cursor element selection style -- */
+
+::selection {
+    background-color: var(--m-lt);
+    color: var(--white);
+}
+
+/* -- setting container style -- */
+
+.cba-saleset-container {
+    padding: 20px 20px 20px 30px;
+}
+
+/* -- saleset top menu bar style -- */
+
+/* -- menu block style -- */
+
+.cba-saleset-top-menubar > ul {
+    align-items: flex-start;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 10px 0px 7.5px 0px;
+}
+
+/* -- main menu and their icon style -- */
+
+.cba-saleset-top-menubar > ul > li {
+    align-items: center;
+    border-bottom: 2px solid var(--white);
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    gap: 5px;
+}
+
+/* -- active main menu style -- */
+
+.cba-saleset-top-menubar > ul > li.cba-salestm-one {
+    color: var(--m-lt);
+}
+
+/* -- main menu icon style -- */
+
+.cba-saleset-top-menubar > ul > li > .cba-top-menu-arrow {
+    color: var(--lt-black);
+    font-size: 1.5rem;
+}
+
+/* -- main menu hover style -- */
+
+.cba-saleset-top-menubar > ul > li:hover {
+    border-bottom: 2px solid var(--m-lt);
+}
+
+/* -- menu three style -- */
+
+.cba-saleset-top-menubar > ul > li > a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+/* -- saleset top menu bar dropdown style -- */
+
+.cba-saleset-top-menubar > ul > li > ul {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 7.5px;
+    list-style-type: none;
+    padding: 2.5px 12.5px;
+}
+
+.cba-saleset-top-menubar > ul > li > ul {
+    display: none;
+}
+
+/* -- main manus dropdown style -- */
+
+.cba-saleset-top-menubar > ul > .cba-salestm-one:hover > .cba-salestm-one-dd {
+    display: block;
+}
+
+.cba-saleset-top-menubar > ul > .cba-salestm-two:hover > .cba-salestm-two-dd {
+    display: block;
+}
+
+/* -- dropdown menus text style -- */
+
+.cba-saleset-top-menubar > ul > li > ul > li {
+    padding-bottom: 2.5px;
+}
+
+.cba-saleset-top-menubar > ul > li > ul > li > a {
+    color: var(--black);
+    font-size: 0.875rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* -- dropdown active menu style -- */
+
+.cba-saleset-top-menubar > ul > li > ul > li > a.cba-salestm-one-dd-active {
+    color: var(--m-lt);
+}
+
+/* -- dropdown menus hover style -- */
+
+.cba-saleset-top-menubar > ul > li > ul > li > a:hover {
+    text-decoration: underline 1.5px var(--m-lt);
+}
+
+/* -- dropdown menu position style -- */
+
+.cba-saleset-top-menubar > ul > .cba-salestm-one {
+    position: relative;
+}
+
+.cba-saleset-top-menubar > ul > li > .cba-salestm-one-dd {
+    position: absolute;
+    top: 27.5px;
+    left: 0px;
+    z-index: 1;
+}
+
+.cba-saleset-top-menubar > ul > .cba-salestm-two {
+    position: relative;
+}
+
+.cba-saleset-top-menubar > ul > li > .cba-salestm-two-dd {
+    position: absolute;
+    top: 27.5px;
+    left: 0px;
+    width: 177px;
+    z-index: 1;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* sale setting container */
+.cba-saleset-setting-container {
+    background-color: var(--white);
+    padding: 20px 25px;
+}
+
+/* head part */
+.cba-saleset-sc-head-part {
+    border-bottom: 1px solid var(--gray-black);
+}
+
+.cba-saleset-sc-head-part > h1 {
+    font-size: 1.25rem;
+    font-family: 500;
+    color: var(--lt-black);
+}
+
+/* middle part */
+.cba-saleset-sc-middle-part {
+    width: 100%;
+    padding: 20px 0px;
+    border-bottom: 1px solid var(--gray-black);
+}
+
+/* row 1 input / select */
+
+.cba-saleset-sc-mp-row1 {
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+/* input col */
+
+.cba-saleset-sc-mpr1-input-box {
+    width: 33%;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.cba-saleset-sc-mpr1-input-box > label {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--lt-black);
+}
+/* required asterisk style */
+.cba-saleset-sc-mpr1-input-box > label > span.cba-saleset-required {
+    color: var(--red);
+}
+
+.cba-saleset-sc-mpr1-input-box > div {
+    display: flex;
+    align-items: center;
+}
+
+.cba-saleset-sc-mpr1-input-box > div > span {
+    color: var(--black);
+    background-color: var(--gray-white);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 7.5px 10px 5px;
+    margin-top: -9px;
+    border: 1px solid var(--gray-black);
+    border-right: none;
+    border-top-left-radius: 2.5px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 2.5px;
+    border-bottom-right-radius: 0px;
+}
+
+.cba-saleset-sc-mpr1-input-box > div > input {
+    border: 1px solid var(--gray-black);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 2.5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 2.5px;
+    padding: 9px 10px 5px;
+    text-align: left;
+}
+
+/* select col */
+
+.cba-saleset-sc-mpr1-select-box {
+    width: 33%;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.cba-saleset-sc-mpr1-select-box > label {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--lt-black);
+}
+
+.cba-saleset-sc-mpr1-select-box > select {
+    border: 1px solid var(--gray-black);
+    border-radius: 2.5px;
+    padding: 9px 10px 5px;
+    text-align: left;
+}
+
+/* row 2 select */
+.cba-saleset-sc-mp-row2 {
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 7.5px;
+}
+
+/* select col */
+.cba-saleset-sc-mpr2-select-box {
+    width: 50%;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.cba-saleset-sc-mpr2-select-box > label {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--lt-black);
+}
+
+.cba-saleset-sc-mpr2-select-box > select {
+    border: 1px solid var(--gray-black);
+    border-radius: 2.5px;
+    padding: 9px 10px 5px;
+    text-align: left;
+}
+
+/* row 3 button */
+.cba-saleset-sc-mp-row3 {
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding-top: 15px;
+}
+
+.cba-saleset-sc-mpr3-col {
+    width: 33%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.cba-saleset-sc-mpr3-cols-row {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.cba-saleset-sc-mpr3-cols-row > p {
+    color: var(--lt-black);
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+/* help icon style */
+.cba-saleset-sc-mpr3-cols-row > p > i.cba-ssc-mpr3-clos-ned-icon {
+    color: var(--orange);
+    font-size: 1.15rem;
+    margin-top: -2.5px;
+}
+
+/* mande icon style */
+.cba-saleset-sc-mpr3-cols-row > p > i.cba-ssc-mpr3-clos-mande-icon {
+    color: var(--m-lt);
+    font-size: 1.15rem;
+    margin-top: -2.5px;
+}
+
+/* btn style */
+.cba-saleset-sc-mpr3-cols-row > div.cba-saleset-sc-mpr3-col-row-btn-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* left btn style */
+.cba-saleset-sc-mpr3-cols-row > div.cba-saleset-sc-mpr3-col-row-btn-box > button:nth-child(1) {
+    color: var(--white);
+    background-color: var(--green);
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    padding: 7.5px 10px 5px;
+    cursor: pointer;
+}
+
+/* right btn style */
+.cba-saleset-sc-mpr3-cols-row > div.cba-saleset-sc-mpr3-col-row-btn-box > button:nth-child(2) {
+    color: var(--white);
+    background-color: var(--red);
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    padding: 7.5px 10px 5px;
+    cursor: pointer;
+}
+
+/* row 4 textarea */
+.cba-saleset-sc-mp-row4 {
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.cba-saleset-sc-mpr4-textarea-box {
+    width: 50%;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.cba-saleset-sc-mpr4-textarea-box > label {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--lt-black);
+}
+
+.cba-saleset-sc-mpr4-textarea-box > textarea {
+    width: 100%;
+    height: 120px;
+    border: 1px solid var(--gray-black);
+    border-radius: 2.5px;
+    padding: 10px 12.5px;
+    resize: vertical;
+    &:focus {
+        outline: none;
+    }
+}
+
+.cba-saleset-sc-mpr4-textarea-box > textarea::placeholder {
+    color: var(--lt-black);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+/* bottom part */
+.cba-saleset-sc-bottom-part {
+    padding-top: 20px;
+    display: flex;
+    justify-self: end;
+}
+
+.cba-saleset-sc-bottom-part > input {
+    width: 100%;
+    color: var(--white);
+    background-color: var(--m-green);
+    font-size: 1rem;
+    padding: 5px 10px 3px;
+    border-radius: 2.5px;
+    cursor: pointer;
+}

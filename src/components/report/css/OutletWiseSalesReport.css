@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --gray-white: #F0F1F2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --lt-black: #212523;
+    --lt-black-op: #21252350;
+    --m-green: #157343;
+    --m-lt: #37A000;
+    --orange: #FD7E14;
+    --green: #008000;
+    --lt-green: #e9f6ec;
+    --red: #FF0000;
+    --lt-red: #fbeaec;
+    /* === FONTS SIZE FOR HEADING === */
+    --primary-head: 22px;
+    --secondary-head: 1.125rem;
+    --secondary: 1rem;
+    --primary-para: 0.825rem;
+}
+
+/* === TOP MENU ITEMS === */
+.owsr-sh-top-menu-items {
+    border-radius: 5px;
+    background-color: var(--white);
+    padding: 5px 0px 0px 0px;
+    margin: 30px 20px 10px 20px;
+}
+
+.owsr-sh-top-menu-items ul {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center!important; 
+    padding: 10px 20px 15px;
+    margin-bottom: 0;
+}
+
+.owsr-sh-top-menu-items li {
+    /* height: 50px; */
+}
+
+.owsr-sh-top-menu-items a {
+    height: 100%;
+    padding: 12px 20px 9px!important;
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.owsr-sh-menu-items a:hover {
+    color: var(--orange);
+}
+
+/* === ACTIVE MENU === */
+.owsr-sh-active-item a {
+    background-color: var(--m-green);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+/* === COUNTER SECTION === */
+.owsr-counter-section {
+    display: flex;
+    width: 100%;
+    gap: 25px;
+    padding: 10px 20px 0px;
+}
+
+/* === TOTAL SALE SECTION === */
+.owsr-total-sale-section {
+    width: 100%;
+    gap: 10px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* === HOME ICON === */
+.owsr-total-sale-section i {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    padding: 10px 8px;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* === TOTAL SALE SECTION === */
+.owsr-total-paid-section {
+    width: 100%;
+    gap: 10px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* === HOME ICON === */
+.owsr-total-paid-section i {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    padding: 10px 8px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--m-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* === SALE TEXT === */
+.owsr-sale-text {
+    line-height: 1.50em;
+}
+
+.owsr-sale-text p {
+    font-size: var(--secondary);
+}
+
+.owsr-sale-text h1 {
+    font-size: var(--primary-head);
+}
+
+/* === PARENT CONTAINER === */
+.owsr-sh-parent-container {
+    width: 100%;
+}
+
+/* === CHILD CONTAINER === */
+.owsr-sh-child-container {
+    background-color: var(--white);
+    margin: 20px;
+    border-radius: 5px;
+}
+
+/* === STOCK REPORT CARD SECTION ===  */
+.owsr-sh-stock-report-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.owsr-sh-stock-report-section p {
+    font-size: var(--secondary);
+}
+
+.owsr-sh-stock-report-section a {
+    background-color: var(--m-green);
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.owsr-sh-stock-report-section i {
+    margin-right: 5px;
+}
+
+/* === FILTER DROPDOWN SECTION === */
+.owsr-sh-filter-drop-down-section {
+    width: auto;
+    gap: 20px;
+    padding: 12px 20px 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* === SH DRAFT CONTAINER === */
+.owsr-sh-draft-container {
+    margin-top: 10px;
+}
+
+.owsr-sh-draft-container input {
+    width: 100%;
+    padding: 5px 8px;
+    border: 1px solid var(--gray-black);
+    border-radius: 0px;  
+    margin-bottom: 0;
+}
+
+.owsr-sh-draft-container input:focus {
+    outline: none;
+}
+
+.owsr-sh-draft-container select {
+    width: 100%;
+    padding: 5px 8px;
+    border: 1px solid var(--gray-black);
+    border-radius: 0px;
+    margin-bottom: 0;
+}
+
+.owsr-sh-draft-container select:focus {
+    outline: none;
+}
+
+/* === FILTER SEARCH === */
+.owsr-sh-filter-search-box {
+    background-color: var(--m-green);
+    padding: 4px 10px;
+    color: var(--white);
+    gap: 5px;
+    border-radius: 5px;
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* === FILTER RESET === */
+.owsr-sh-filter-reset-box {
+    background-color: var(--red);
+    padding: 4px 10px;
+    color: var(--white);
+    gap: 5px;
+    border-radius: 5px;
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.owsr-sh-line {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 0px 30px;
+}
+
+th,
+td {
+    border: 1px solid var(--lt-black-op);
+    padding: 5px;
+}
+
+.owsr-text-end {
+    text-align: end;
+}
+
+.owsr-text-start {
+    text-align: left;
+}
+
+.owsr-text-last {
+    width: 8%;
+}
+
+/* === SHOW & FILE & SEARCH === */
+
+.owsr-show-file-search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 0px;
+}
+
+.owsr-sh-show-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: var(--secondary);
+}
+
+.owsr-sh-show-container p {
+    font-size: 0.875rem!important;
+}
+
+.owsr-sh-show-container select {
+    height: 36px;
+    width: 44px;
+    text-align: center;
+    border: 1px solid var(--gray-black);
+    border-radius: 0px;
+    font-size: var(--secondary);
+}
+
+/* === FILE CONTAINER === */
+.owsr-sh-file-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.owsr-sh-file-container a {
+    background-color: var(--m-green);
+    color: var(--white);
+    padding: 5px 10px 3px;
+    border-radius: 0px;
+}
+
+/* === SHOW SEARCH CONTAINER === */
+.owsr-sh-show-search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--secondary);
+}
+
+.owsr-sh-show-search-container input {
+    padding: 5px 8px;
+    border: 1px solid var(--gray-black);
+    border-radius: 0px;
+}
+
+.owsr-sh-show-search-container input:focus {
+    outline: none;
+}
+
+/* === PRODUCT ALL DETAILS === */
+.owsr-sh-product-all-details-container {
+    padding: 10px 20px 10px;
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 0px 30px;
+}
+
+th,
+td {
+    border: 1px solid var(--lt-black-op);
+    padding: 10px 5px;
+}
+
+table th {
+    font-size: var(--secondary);
+    font-weight: 500;
+}
+
+table td {
+    text-align: center;
+    align-items: center;
+}
+
+
+.owsr-sh-av-box input {
+    width: 50px;
+    padding: 5px 5px;
+    border: 1px solid black;
+    font-size: var(--primary-para);
+}
+
+.owsr-sh-av-box input:focus {
+    outline: none;
+}
+
+.owsr-sh-qty-number-input input {
+    width: 70px;
+    padding: 5px 5px;
+    border: 1px solid var(--lt-black);
+    font-size: var(--primary-para);
+}
+
+.owsr-sh-qty-number-input input:focus {
+    outline: none;
+}
+
+.owsr-sh-rate-input-container input {
+    width: 60px;
+    padding: 5px 5px;
+    border: 1px solid var(--lt-black);
+    font-size: var(--primary-para);
+}
+
+.owsr-sh-rate-input-container input:focus {
+    outline: none;
+}
+
+.owsr-sh-discount-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.owsr-sh-discount-left-container input {
+    width: 50px;
+    padding: 5px 5px;
+    border: 1px solid var(--lt-black);
+    font-size: var(--primary-para);
+}
+
+.owsr-sh-discount-left-container input:focus {
+    outline: none;
+}
+
+.owsr-sh-discount-right-container input {
+    width: 50px;
+    padding: 5px 5px;
+    border: 1px solid var(--lt-black);
+    background-color: var(--lt-black-op);
+    font-size: var(--primary-para);
+}
+
+.owsr-sh-discount-right-container input:focus {
+    outline: none;
+}
+
+.owsr-sh-vatbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+tbody tr th p {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+/* ==== TABLE END === */
+/* === SLIDE PAGES === */
+.owsr-sh-slider-pages {
+    padding: 0px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.owsr-sh-slide-right-item {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.owsr-sh-slide-right-item a {
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: var(--black);
+    background-color: var(--gray-white);
+}
+
+.owsr-sh-slide-right-item p {
+    padding: 6px 15px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--m-lt);
+}
+
+@media(max-width:768px) {
+    table {
+        width: 100%;
+    }
+
+    .owsr-sh-product-details-table {
+        width: 100%;
+        overflow: auto;
+    }
+}

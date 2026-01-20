@@ -1,0 +1,241 @@
+/* -- font link -- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* -- root -- */
+
+:root {
+  --gray-white: #F0F1F2;
+  --white: #FFFFFF;
+  --black: #000000;
+  --gray-black: #DDDDDD;
+  --lt-black: #212523;
+  --lt-black-op: #21252350;
+  --m-green: #157343;
+  --m-light: #37A000;
+  --orange: #FD7E14;
+  --green: #008000;
+  --lt-green: #e9f6ec;
+  --red: #FF0000;
+  --lt-red: #fbeaec;
+}
+
+/* -- body style -- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", serif;
+}
+
+
+/* -- pricing container style -- */
+
+.cba-planpricing-pricing-container {
+  background-color : var(--gray-white);
+  padding: 50px 0;
+}
+
+/* -- heading part style -- */
+
+.cba-planpricing-heading-part h2 {
+  color: var(--black);
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* -- pricing cart container style */
+
+.cba-planpricing-pricing-cart-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .cba-planpricing-pricing-cart-container {
+    flex-wrap: wrap;
+  }
+}
+
+/* -- pricing cart style -- */
+
+.cba-planpricing-pricing-cart {
+  width: 250px;
+  background-color: var(--white);
+  padding: 25px 15px;
+  border: 2.5px solid var(--white);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .cba-planpricing-pricing-cart {
+    width: 280px;
+  }
+  .cba-planpricing-pricing-cart-premium {
+    width: 280px!important;
+  }
+}
+
+.cba-planpricing-pricing-cart-premium {
+  width: 250px;
+  background-color: var(--white);
+  padding: 25px 15px;
+  border: 2.5px solid var(--green);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* -- cart heading -- */
+
+.cba-planpricing-pricing-cart-header {
+  text-align: center;
+}
+
+.cba-planpricing-pricing-cart-header img {
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+}
+
+.cba-planpricing-pricing-cart-header h3 {
+  color: var(--lt-black);
+  font-size: 25px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.cba-planpricing-pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cba-planpricing-money-sign {
+  color: var(--lt-black);
+  font-size: 20px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+}
+
+.cba-planpricing-pricing h2 {
+  font-size: 50px;
+  font-weight: 400;
+  color: var(--lt-black);
+}
+
+.cba-planpricing-package-v {
+  color: var(--lt-black);
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.cba-planpricing-regular-price {
+  color: var(--lt-black);
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+/* -- features list style -- */
+
+.cba-planpricing-features-list-one ul, .cba-planpricing-features-list-two ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+  margin-top: 30px;
+}
+
+/* -- features list one style -- */
+
+.cba-planpricing-features-list-one {
+  margin-top: -30px;
+  padding: 0px 10px;
+}
+
+.cba-planpricing-features-list-one ul li {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 7.5px;
+}
+
+/* -- flo icon style -- */
+
+.cba-planpricing-flo-icon {
+  font-size: 20px;
+  color: var(--black);
+  background-color: var(--orange);
+  padding: 3.5px;
+  border-radius: 50%;
+  margin-right: 7.5px;
+}
+
+/* -- features list two style -- */
+
+.cba-planpricing-features-list-two ul li {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 7.5px;
+  margin-top: 5px;
+}
+.cba-planpricing-features-list-two {
+  margin-top: -20px;
+  padding: 0px 10px;
+}
+/* -- flt icon style -- */
+
+.cba-planpricing-flt-icon-a {
+  font-size: 15px;
+  color: var(--green);
+  background-color: var(--lt-green);
+  padding: 2.5px;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+.cba-planpricing-flt-icon-i {
+  font-size: 15px;
+  color: var(--red);
+  background-color: var(--lt-red);
+  padding: 2.5px;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+/* -- pricing cart btn style -- */
+
+.cba-planpricing-pricing-cart-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.cba-planpricing-pricing-cart-btn button {
+  color: var(--black);
+  background-color: var(--white);
+  border: 2.5px solid var(--black);
+  border-radius: 15px;
+  padding: 5px 50px;
+  transition: all 0.3s ease;
+}
+
+.cba-planpricing-pricing-cart-btn button:hover {
+  color: var(--white);
+  background-color: var(--black);
+  border: 2.5px solid var(--black);
+  border-radius: 15px;
+  padding: 5px 50px;
+  transition: all 0.3s ease;
+}
+
+/* -- css end -- */

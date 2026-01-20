@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --gray-white: #F0F1F2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --light-black: #212523;
+    --light-black-op: #21252350;
+    --main-green: #157343;
+    --main-light: #37A000;
+    --orange: #FD7E14;
+    --green: #008000;
+    --light-green: #e9f6ec;
+    --red: #FF0000;
+    --light-red: #fbeaec;
+    /* === FONTS SIZE FOR HEADING === */
+    --primary-head: 22px;
+    --secondary-head: 1.125rem;
+    --secondary: 1rem;
+    --primary-para: 0.825rem;
+}
+
+
+.ob-sh-parent{
+    width: 100%;
+    padding: 20px;
+}
+.ob-sh-child-container{
+    background-color: var(--white);
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* === DRAFT SALE SECITON === */
+.ob-sh-draft-sale-section{
+    width: 100%;
+
+}
+/* === DRAFT SALE TOP ITEMV === */
+.ob-sh-draft-sale-top-item{
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ob-sh-draft-sale-top-item p{
+    font-size: var(--secondary);
+}
+/* === DRAFT SALE TOP RIGHT ITMES === */
+.ob-sh-draft-sale-top-right-items{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+/* === FILTR === */
+.ob-sh-filter{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--main-green);
+}
+.ob-sh-filter a{
+    color: white;
+    font-size: var(--primary-para);
+}
+
+/* === FILTER DROPDOWN SECTION === */
+.ob-sh-filter-drop-down-section{
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-items: flex-end;
+}
+/* === SH DRAFT CONTAINER === */
+.ob-sh-draft-container{
+    line-height: 2em;
+}
+.sh-draft-container p{
+    font-size: var(--secondary);
+}
+.ob-sh-draft-container select{
+    width: 200px;
+    border-radius: 5px;
+    padding: 5px 8px;
+    border: 1px solid var(--light-black);
+}
+.ob-sh-draft-container select:focus{
+    outline: none;
+}
+/* === FILTER SEARCH === */
+.ob-sh-filter-search-box{
+    background-color: var(--main-green);
+    padding: 4px 10px;
+    color: var(--white);
+    gap: 5px;
+    border-radius: 5px;
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+/* === FILTER RESET === */
+.ob-sh-filter-reset-box{
+    background-color: var(--red);
+    padding: 4px 10px;
+    color: var(--white);
+    gap: 5px;
+    border-radius: 5px;
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+.ob-sh-line{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+/* === SHOW AND SEARCH CONTAINER === */
+.ob-sh-show-and-search-container{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ob-sh-show-container{
+    gap: 5px;
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+}
+.ob-sh-show-container select{
+    padding: 5px 5px;
+ /*    padding: 5px; */
+    padding-left: 10px;
+}
+.ob-sh-show-container select:focus{
+    outline: none;
+}
+/* === SEARCH === */
+.ob-sh-search-container{
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+.ob-sh-search-container input{
+    width: 400px;
+    padding: 5px 10px;
+    border: 1px solid var(--light-black-op);
+}
+.ob-sh-search-container input:focus{
+    outline: none;
+}
+/* === MANAGE SALE DETAILS SECTION === */
+.ob-manage-sale-details-section{
+    width: 100%;
+    padding: 0px 20px;
+}
+/* === TABLE === */
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 10px;
+    border: 1px solid var(--light-black-op);
+}
+table th{
+    font-size: var(--secondary);
+    font-weight: 500;
+}
+.ob-text-middle{
+    text-align: center;
+}
+.ob-text-right{
+    text-align: right;
+}
+/* === SLIDE PAGES === */
+.ob-sh-slider-pages {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ob-sh-slide-right-item {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.ob-sh-slide-right-item a {
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: var(--black);
+    background-color: var(--light-black-op);
+}
+
+.ob-sh-slide-right-item p {
+    padding: 6px 15px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--main-green);
+}
+/* === ADD NEW OPENIGN BALANCE ===  */
+/* ============================= */
+.ob-sh-add-new-oneping-balance-section{
+    background-color: var(--white);
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.2);
+    margin: 20px;
+    width: auto;
+    border-radius: 5px;
+    display: none;
+}
+.ob-sh-opening-balance-section{
+    padding: 20px 20px;
+    height: initial;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ob-sh-opening-balance-section p{
+    font-size: var(--secondary-head);
+}
+.ob-sh-balance-list{
+    cursor: pointer;
+    padding: 6px 15px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--main-green);
+}
+.ob-sh-balance-list label{
+    cursor: pointer;
+}
+.ob-sh-balance-list i{
+    margin-right: 5px;
+}
+/* === TABLE SECTION ===  */
+.ob-sh-opening-balance-table-section{
+    margin: 20px;
+    padding-bottom: 20px;
+}
+.ob-sh-opening-balance-table-section tbody select{
+    width: 100%;
+    padding: 8px 5px;
+    font-size: var(--primary-para);
+    border: 1px solid var(--light-black-op);
+}
+.ob-sh-opening-balance-table-section tbody select:focus{
+    outline: none;
+}
+.ob-sh-opening-balance-table-section tbody input{
+    appearance: none;
+    width: 100%;
+    padding: 8px 5px;
+    font-size: var(--primary-para);
+    border: 1px solid var(--light-black-op);
+}
+.ob-sh-opening-balance-table-section tbody input:focus{
+    outline: none;
+}
+.ob-sh-trash-icon{
+    text-align: center;
+}
+.ob-sh-trash-icon i{
+    transition: all 0.5s ease;
+    padding: 5px;
+    color: var(--red);
+    border: 1px solid var(--red);
+    background-color: var(--light-red);
+}
+.ob-sh-trash-icon i:hover{
+    
+    background-color: var(--red);
+    color: var(--white);
+}
+.ob-sh-opening-balance-table-section tfoot tr td button{
+    padding: 8px 8px;
+    border: none;
+    background-color: var(--main-green);
+    color: var(--white);
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+.ob-sh-opening-balance-table-section tfoot tr td input{
+    width: 100%;
+    padding: 8px 5px;
+    text-align: right;
+    font-size: var(--primary-para);
+    background-color: var(--light-black-op);
+    border: none;
+}
+.ob-sh-opening-balance-table-section tfoot tr td input:focus{
+    outline: none;
+}

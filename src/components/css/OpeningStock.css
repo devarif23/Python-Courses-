@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --gray-white: #F0F1F2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --light-black: #212523;
+    --light-black-op: #21252350;
+    --main-green: #157343;
+    --main-light: #37A000;
+    --orange: #FD7E14;
+    --green: #008000;
+    --light-green: #e9f6ec;
+    --red: #FF0000;
+    --light-red: #fbeaec;
+    /* === FONTS SIZE FOR HEADING === */
+    --primary-head: 22px;
+    --secondary-head: 1.125rem;
+    --secondary: 1rem;
+    --primary-para: 0.825rem;
+}
+
+/* === PARENT SECTION === */
+.sh-opcsv-parent-section{
+    width: 100%;
+    padding: 20px;
+}
+/* === CHILD SECTION === */
+.sh-opcsv-child-section{
+    width: 100%;
+}
+/* === TOP MENU ITEMS === */
+.sh-opcsv-top-menu-items{
+    border-radius: 5px;
+    background-color: var(--white);
+    padding: 10px 0px 10px 10px;
+}
+.sh-opcsv-top-menu-items ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+.sh-opcsv-top-menu-items li{
+    height: 50px;
+}
+.sh-opcsv-top-menu-items a{
+    height: 100%;
+    padding: 0px 20px;
+    color: var(--black);
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+}
+/* === ACTIVE MENU === */
+.sh-opcsv-active-item a{
+    background-color: var(--main-green);
+    color: var(--white);
+    border-radius: 5px;
+}
+.sh-opcsv-menu-items a:hover{
+    color: var(--orange)!important;
+}
+/* === REQUISIION LIST SECTION === */
+/* === DRAFT SALE SECITON === */
+.sh-opcsv-draft-sale-section{
+    width: 100%;
+    box-sh-opcsvadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+    background-color: var(--white);
+    margin-top: 20px;
+    border-radius: 5px;
+}
+/* === DRAFT SALE TOP ITEMV === */
+.sh-opcsv-requisition-top-item{
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sh-opcsv-requisition-top-item p{
+    font-size: var(--secondary);
+}
+/* === DRAFT SALE TOP RIGHT ITMES === */
+.sh-opcsv-draft-sale-top-right-items{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+/* === FILTR === */
+.sh-opcsv-filter{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--main-green);
+}
+.sh-opcsv-filter a{
+    color: white;
+    font-size: var(--primary-para);
+}
+.some-info-text{
+    font-size: var(--secondary);
+    line-height: 2em;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #FFB61E;
+    margin-top: 20px;
+}
+.sh-opcsv-the-correct{
+    font-size: var(--secondary);
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.sh-opcsv-the-correct span{
+    color: #62D0F1;
+}
+/* === DOWNLOAD BUTTON === */
+.sh-opcsv-download-button{
+    padding: 30px 20px 40px 20px;
+}
+.sh-opcsv-download-button a{
+    padding: 10px;
+    background-color: var(--main-green);
+    color: var(--white);
+    border-radius: 5px;
+}
+.sh-opcsv-download-button i{
+    margin-right: 5px;
+}
+/* === FOOTER SECITON === */
+.sh-opcsv-footer-section{
+    margin-top: 20px;
+    background-color: var(--white);
+    box-sh-opcsvadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.sh-opcsv-opening{
+    padding: 20px;
+}
+.sh-opcsv-upload{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.sh-opcsv-file-upload{
+    display: flex;
+    align-items: center;
+}
+.sh-opcsv-file-upload input{
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid var(--light-black-op);
+}
+.sh-opcsv-file-upload label{
+    padding: 9px;
+    border-radius: 0px 5px 5px 0;
+    border-top: 1px solid var(--light-black-op);
+    border-bottom: 1px solid var(--light-black-op);
+    border-right: 1px solid var(--light-black-op);
+}
+.sh-opcsv-submit-button{
+    padding: 20px;
+}
+.sh-opcsv-submit-button a{
+    background-color: var(--main-green);
+    color: var(--white);
+    padding: 8px;
+    border-radius: 5px;
+}

@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --gray-white: #F0F1F2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --lt-black: #212523;
+    --lt-black-op: #21252350;
+    --m-green: #157343;
+    --m-lt: #37A000;
+    --orange: #FD7E14;
+    --green: #008000;
+    --lt-green: #e9f6ec;
+    --red: #FF0000;
+    --lt-red: #fbeaec;
+    /* === FONTS SIZE FOR HEADING === */
+    --primary-head: 22px;
+    --secondary-head: 1.125rem;
+    --secondary: 1rem;
+    --primary-para: 0.825rem;
+}
+/* === TOP MENU ITEMS === */
+.PurDraftPurchase-sh-parent-section {
+    width: 100%;
+    padding: 20px 20px 100px 30px;
+}
+
+.PurDraftPurchase-sh-top-menu-items{
+    border-radius: 5px;
+    background-color: var(--white);
+    padding: 10px 0px 0px 10px;
+    margin-top: 10px;
+    margin-bottom: 20px!important;
+}
+.PurDraftPurchase-sh-top-menu-items ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 5px 10px 15px 10px;
+    margin-left: -3px;
+}   
+.PurDraftPurchase-sh-top-menu-items li{
+    height: 50px;
+}
+.PurDraftPurchase-sh-top-menu-items a{
+    height: 100%;
+    padding: 0px 20px;
+    color: var(--black);
+    font-size: var(--secondary);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+.PurDraftPurchase-sh-menu-items a:hover{
+    color: var(--orange);
+}
+/* === ACTIVE MENU === */
+.PurDraftPurchase-sh-active-item a{
+    background-color: var(--m-green);
+    color: var(--white);
+    border-radius: 5px;
+}
+/* === COUNTER SECTION === */
+.PurDraftPurchase-counter-section{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    margin-top: 20px;
+}
+/* === TOTAL SALE SECTION === */
+.PurDraftPurchase-total-sale-section{
+    width: 100%;
+    gap: 10px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+/* === HOME ICON === */
+.PurDraftPurchase-total-sale-section i{
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    padding: 10px 8px;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* === TOTAL SALE SECTION === */
+.PurDraftPurchase-total-paid-section{
+    width: 100%;
+    gap: 10px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+/* === HOME ICON === */
+.PurDraftPurchase-total-paid-section i{
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    padding: 10px 8px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--m-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* === TOTAL DUE SECTION === */
+.PurDraftPurchase-total-due-section{
+    width: 100%;
+    gap: 10px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+/* === HOME ICON === */
+.PurDraftPurchase-total-due-section i{
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    padding: 10px 8px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* === SALE TEXT === */
+.PurDraftPurchase-sale-text{
+    line-height: 2em;
+}
+.PurDraftPurchase-sale-text p{
+    font-size: var(--secondary);
+}
+.PurDraftPurchase-sale-text h1{
+    font-size: var(--primary-head);
+}
+/* === MANAGE SECTION === */
+.PurDraftPurchase-manage-section{
+    border-radius: 5px;
+    background-color: var(--white);
+    margin-top: 20px;
+}
+/* === MANAGE CONTAINER === */
+.PurDraftPurchase-manage-container{
+    margin: 0px 20px;
+    padding: 35px 0px!important;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray-black);
+}
+.PurDraftPurchase-manage-container p{
+    font-size: var(--secondary);
+}
+/* === FILTER AND ADD SECTION === */
+.PurDraftPurchase-filter-add-new{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+.PurDraftPurchase-filter-container{
+    gap: 10px;
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--m-green);
+    display: flex;
+    align-items: center;
+}
+.PurDraftPurchase-filter-container a{
+    color: var(--white);
+}
+.PurDraftPurchase-add-new-sale-container{
+    gap: 10px;
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--m-green);
+    display: flex;
+    align-items: center;
+}
+.PurDraftPurchase-add-new-sale-container a{
+    color: var(--white);
+}
+/* === FILTER CONTAINER ITEMS === */
+.PurDraftPurchase-filter-container-items{
+    height: 70px;
+    padding: 20px 30px 10px;
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--gray-black);
+}
+.PurDraftPurchase-invoice-box input{
+    padding: 4px 10px;
+    width: 80px;
+    font-size: 1rem;
+    color: gray;
+}
+.PurDraftPurchase-invoice-box input:focus{
+    outline: none;
+}
+.PurDraftPurchase-sale-date-input-box input{
+    padding: 5px 10px;
+    font-size: 1rem;
+    text-align: left;
+}
+.PurDraftPurchase-sale-date-input-box input:focus{
+    outline: none;
+}
+/* === FIND BUTTON === */
+.PurDraftPurchase-sh-button-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.PurDraftPurchase-sh-find-button {
+    margin-top: -9px;
+}
+.PurDraftPurchase-sh-find-button a{
+    background-color: var(--m-green);
+    color: var(--white);
+    padding: 7px 10px;
+    border-radius: 3px;
+    font-size: var(--primary-para);
+}
+.PurDraftPurchase-sh-reset-button {
+    margin-top: -9px;
+}
+.PurDraftPurchase-sh-reset-button a{
+    background-color: var(--red);
+    color: var(--white);
+    padding: 7px 10px;
+    border-radius: 3px;
+    font-size: var(--primary-para);
+}
+/* === SHOW AND SEARCH SECTION === */
+.PurDraftPurchase-show-and-search-section{
+    height: 90px;
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray-black)!important;
+}
+/* === SHOW CONTAINER === */
+.PurDraftPurchase-show-container {
+    display: flex;
+    gap: 5px;
+}
+.PurDraftPurchase-show-container > p {
+    margin-top: 5px;
+}
+
+.PurDraftPurchase-show-container > select {
+    padding: 4px 8px;
+    border: 1px solid var(--gray-black);
+}
+/* === SEARCH CONTAINER === */
+.PurDraftPurchase-search-container {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.PurDraftPurchase-search-container input{
+    width: 250px;
+    border: 1px solid var(--gray-black);
+    border-radius: 0px;
+    padding: 4px 8px;
+}
+.PurDraftPurchase-search-container input:focus{
+    outline: 1px solid #2B51B0;
+    border: none;
+}
+/* === MANAGE SALE DETAILS SECTION === */
+.PurDraftPurchase-manage-sale-details-section{
+    width: 100%;
+    padding: 0px 20px;
+}
+/* === TABLE === */
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 10px;
+    border: 1px solid var(--lt-black-op);
+}
+table th{
+    font-size: var(--secondary);
+    font-weight: 500;
+}
+/* === SLIDE PAGES === */
+.PurDraftPurchase-sh-slider-pages {
+    padding: 0px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.PurDraftPurchase-sh-slide-right-item {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.PurDraftPurchase-sh-slide-right-item a {
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: var(--black);
+    background-color: var(--lt-black-op);
+}
+
+.PurDraftPurchase-sh-slide-right-item p {
+    padding: 6px 15px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--m-green);
+}

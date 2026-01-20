@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --gray-white: #F0F1F2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --lt-black: #212523;
+    --lt-black-op: #21252350;
+    --m-green: #157343;
+    --m-light: #37A000;
+    --orange: #FD7E14;
+    --green: #008000;
+    --lt-green: #e9f6ec;
+    --red: #FF0000;
+    --lt-red: #fbeaec;
+    /* === FONTS SIZE FOR HEADING === */
+    --primary-head: 22px;
+    --secondary-head: 1.125rem;
+    --secondary: 1rem;
+    --primary-para: 0.825rem;
+}
+
+
+.afy-sh-parent{
+    width: 100%;
+    padding: 20px;
+}
+.afy-sh-child-container{
+    background-color: var(--white);
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+/* === TOP MENU ITEMS === */
+.afy-sh-top-menu-items {
+    border-radius: 5px;
+    background-color: var(--white);
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.3);
+    padding: 10px;
+    height: 60px;
+}
+
+.afy-sh-top-menu-items ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: -25px;
+}
+
+.afy-sh-top-menu-items li {
+    height: 30px;
+    margin-bottom: 0;
+}
+
+.afy-sh-top-menu-items a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--white);
+    background: var(--m-green);
+}
+
+.afy-sh-menu-items a:hover {
+    color: var(--red);
+}
+
+/* === ACTIVE MENU === */
+.afy-sh-active-item a {
+    background-color: var(--main-green);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+/* === DRAFT SALE SECITON === */
+.afy-sh-draft-sale-section{
+    width: 100%;
+}
+/* === DRAFT SALE TOP ITEMV === */
+.afy-sh-draft-sale-top-item{
+    padding: 20px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.afy-sh-draft-sale-top-item p{
+    font-size: var(--secondary);
+}
+/* === SHOW AND SEARCH CONTAINER === */
+.afy-sh-show-and-search-container{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.afy-sh-show-container{
+    gap: 5px;
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+}
+.afy-sh-show-container select{
+    padding: 7.5px 10px; 
+    color: var(--lt-black);
+    appearance: none;
+    height: 35px;
+    width: 40px;
+    outline: none;
+    border-radius: 2.5px;
+}
+.afy-sh-show-container select:focus{
+    outline: none;
+}
+/* === SEARCH === */
+.afy-sh-search-container{
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+.afy-sh-search-container input{
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid var(--light-black-op);
+}
+.afy-sh-search-container input:focus{
+    outline: none;
+}
+/* === MANAGE SALE DETAILS SECTION === */
+.afy-manage-sale-details-section{
+    width: 100%;
+    padding: 0px 20px;
+}
+/* === TABLE === */
+.sh-edit-icon i{
+    cursor: pointer;
+}
+/* === SLIDE PAGES === */
+.afy-sh-slider-pages {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.afy-sh-slide-right-item {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.afy-sh-slide-right-item a {
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: var(--black);
+    background-color: var(--gray-white);
+}
+
+.afy-sh-slide-right-item p {
+    padding: 6px 15px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: #37a000;
+}

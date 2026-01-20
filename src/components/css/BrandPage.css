@@ -1,0 +1,326 @@
+/* -- fonts -- */
+@import url('https://fonts.bp-googleapis.bp-com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100.bp-.bp-900;1,100.bp-.bp-900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap');
+
+/* -- root -- */
+
+:root {
+    --gray-white: #F0F1F2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --lt-black: #212523;
+    --lt-black-op: #21252350;
+    --m-green: #157343;
+    --m-light: #37a000;
+    --orange: #FD7E14;
+    --green: #008000;
+    --lt-green: #e9f6ec;
+    --red: #FF0000;
+    --lt-red: #fbeaec;
+}
+
+/* ---------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+}
+
+::selection {
+    color: var(--white);
+    background-color: var(--main-light);
+}
+
+/* -- main container style -- */
+
+.bp-main-container {
+/*    padding-top: 0;
+    padding-right: 20px;
+    padding-bottom: 0;
+    padding-left: 35px; */
+    padding: 20px;
+}
+
+/* -- category container style -- */
+
+.bp-brand-container {
+    width: 100%;
+   /*  margin-top: 25px; */
+}
+
+/* -- top menus style--  */
+
+.bp-top-menus {
+    background-color: var(--white);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 15px;
+    padding-top: 18px;
+}
+
+.bp-top-menus ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    margin-left: -20px;
+}
+
+.bp-top-menus ul li a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* -- active menu style -- */
+
+.bp-active-menu {
+    color: var(--white)!important;
+    background-color: var(--m-green);
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* -- menu hover style -- */
+
+.bp-light-up:hover {
+    color: var(--orange);
+}
+
+/* -- list container style -- */
+
+.bp-list-container {
+    background-color: var(--white);
+    padding: 0px 20px;
+}
+
+/* -- heading-add-new-btn style -- */
+
+.bp-heading-add-new-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center!important;
+    border-bottom: 1px solid var(--gray-black);
+    padding: 0px 0px;
+}
+
+.bp-heading h2 {
+    color: var(--lt-black);
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+/* -- add-new-btn style -- */
+
+.bp-add-new-btn {
+    display: flex;
+    gap: 5px;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.bp-add-new-btn {
+    background-color: var(--m-green);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.bp-add-new-btn a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.bp-add-icon {
+    color: var(--white);
+    font-size: 20px;
+}
+
+/* -- list-short-dpdwn-search-box style -- */
+
+.bp-list-short-dpdwn-search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+/* -- list-short-dpdwn style -- */
+
+.bp-list-short-dpdwn {
+    display: flex;
+    gap: 7.bp-5px;
+    align-items: center!important;
+
+}
+
+.bp-list-short-dpdwn h3 {
+    color: var(--lt-black);
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.bp-list-short-dpdwn select {
+    color: var(--lt-black);
+    appearance: none;
+    height: 35px;
+    width: 36px;
+    padding-left:8px;
+    outline: none;
+    border-radius: 2.bp-5px;
+    
+}
+
+/* -- search-box style -- */
+
+.bp-search-box {
+    display: flex;
+    align-items: center;
+}
+
+.bp-search-box legend {
+    color: var(--lt-black);
+    font-size: 16px;
+}
+
+.bp-search-box input {
+    outline: none;
+    height: 30px;
+    width: 193px;
+    border: 1px solid var(--gray-black);
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+/* -- table-list style --*/
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* -- thead style -- */
+
+thead {
+    cursor: pointer;
+}
+
+th, td {
+    border: 1px solid var(--gray-black);
+    padding: 10px 15px;
+}
+
+thead tr th {
+    font-size: 17.bp-5px;
+    font-weight: 600;
+    text-align: left;
+    color: var(--black);
+}
+
+tbody tr td {
+    font-size: 14px;
+    color: var(--black);
+}
+
+tbody tr:hover {
+    background-color: var(--gray-white);
+}
+
+/* -- tbody style -- */
+
+/* status style */
+
+.bp-s-active {
+    color: var(--green);
+    background-color: var(--lt-green);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2.bp-5px 7.bp-5px;
+    border-radius: 5px;
+}
+
+.bp-s-inactive {
+    color: var(--red);
+    background-color: var(--lt-red);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2.bp-5px 7.bp-5px;
+    border-radius: 5px;
+}
+
+/* -- action style -- */
+
+.bp-edit-icon {
+    color: var(--green);
+    background-color: var(--lt-green);
+    padding: 7px 7px;
+    margin-right: 2.bp-5px;
+    border: 1px solid var(--green);
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.bp-edit-icon:hover {
+    background-color: var(--lt-black-op);
+}
+
+.bp-delete-icon {
+    color: var(--red);
+    background-color: var(--lt-red);
+    padding: 7px 7px;
+    margin-left: 2.bp-5px;
+    border: 1px solid var(--red);
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.bp-delete-icon:hover {
+    background-color: var(--lt-black-op);
+}
+
+/* -- entries-details-list-page-btn style -- */
+
+.bp-entries-details-list-page-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.bp-entries-details {
+    color: var(--black);
+    font-size: 15px;
+}
+
+.bp-list-page-btn {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.bp-list-page-btn button {
+    color: var(--lt-black);
+    background-color: var(--gray-white);
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bp-list-page-btn h4 {
+    margin-top: 10px;
+}
+
+.bp-list-page-btn h4 span {
+    color: var(--white);
+    background-color: var(--m-light);
+    font-size: 15px;
+    font-weight: 400;
+    padding: 9px 13px!important;
+    border-radius: 5px;
+}
